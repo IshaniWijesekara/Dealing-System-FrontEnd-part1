@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/semantic.css">
+    <link rel='stylesheet prefetch'
+          href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+    <link rel="stylesheet" href="_css/StyleSheet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="relative/path/to/your/javascript.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
+          type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+</head>
+<body style="background-color: #E5E5E5">
+<!--Start Navigation Bar-->
+<div class="ui segment" style="background-color: #0d71bb;">
+    <div class="ui inverted secondary menu" style="margin-bottom: -25px; margin-top: -25px;">
+        <div class="item">
+            <img src="_img/dealing-invers.png" style="width: 150px;">
+        </div>
+        <a class="item active" href="index.html">
+            Home
+        </a>
+        <a class="item" href="ads.html">
+            All Adz
+        </a>
+        <a class="item" href="bidads.html">
+            Bid Now
+        </a>
+        <a class="item" href="signin.html">
+            Post Ad
+        </a>
+        <div class="right menu">
+            <div class="ui dropdown item">
+                Language <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item">English</a>
+                    <a class="item">සිංහල</a>
+                    <a class="item">Tamil</a>
+                </div>
+            </div>
+            <a class="item" href="signin.html">
+                Login
+            </a>
+        </div>
+    </div>
+</div>
+<!--End Navigation Bar-->
+<div class="ui centered grid">
+    <div class="right menu" style="background-color: #0d71bb ; height: 60px; margin-top: 10px;">
+        <div class="right menu" style=" height: 60px;">
+            <div class="ui input" style="width: 700px;">
+                <input class="input" type="text" placeholder="Search anything do you want?">
+            </div>
+            <div class="ui selection dropdown" id="uiDropdown">
+                <input type="hidden" name="category">
+                <i class="dropdown icon"></i>
+                <div class="default text" style="font-size: 13.5px;">All Category</div>
+                <div class="menu">
+                    <div class="item" style="font-size: 12px;" data-value="1">Antiques</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Art</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Baby</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Books</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Business & Industrial</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Cameras & Photo</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Cell Phones & Accessories</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">Clothing, Shoes & Accessories</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Coins & Paper Money</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Collectibles</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Computers/Tablets & Networking</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Consumer Electronics</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Crafts</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Dolls & Bears</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">DVDs & Movies</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">eBay Motors</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Entertainment Memorabilia</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Gift Cards & Coupons</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Health & Beauty</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Home & Garden</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Jewelry & Watches</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">Music</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Musical Instruments & Gear</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Pet Supplies</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Pottery & Glass</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Real Estate</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Specialty Services</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Sporting Goods</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">Sports Mem, Cards & Fan Shop</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Stamps</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Tickets & Experiences</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Toys & Hobbies</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Travel</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Video Games & Consoles</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Everything Else</div>
+                </div>
+            </div>
+            <button class="ui button" id="findButton">Search</button>
+        </div>
+    </div>
+    <!--End search form-->
+        <div class="ui container segment">
+            <div class="row">
+                <div class="ui ten wide column" style="padding-top: 20px;">
+                    <h4 class="ui dividing header"><a href="#">Auto Parts & Vehicles</a></h4>
+                    <div class="ui two column very relaxed grid">
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Auto Parts & Accessories</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">ATV, Side-by-Side & UTV Parts & Accessories</a><br>
+                                    <a href="#">Automotive Tools & Supplies</a><br>
+                                    <a href="#">Aviation Parts & Accessories</a><br>
+                                    <a href="#">Boat Parts</a><br>
+                                    <a href="#">In-Car Technology, GPS & Security Devices</a><br>
+                                    <a href="#">Car & Truck Parts</a><br>
+                                    <a href="#">Golf Cart Parts & Accessories</a><br>
+                                    <a href="#">Repair Manuals & Literature</a><br>
+                                    <a href="#">Motorcycle Accessories</a><br>
+                                    <a href="#">Motorcycle Parts</a><br>
+
+                                </div>
+                                <div class="column">
+                                    <a href="#">Parts For Other Vehicles</a><br>
+                                    <a href="#">Performance & Racing Parts</a><br>
+                                    <a href="#">Personal Watercraft Parts</a><br>
+                                    <a href="#">RV, Trailer & Camper Parts</a><br>
+                                    <a href="#">Salvage Car Parts</a><br>
+                                    <a href="#">Scooter Parts & Accessories</a><br>
+                                    <a href="#">Automotive Services & Installation</a><br>
+                                    <a href="#">Snowmobile Parts in Motors</a><br>
+                                    <a href="#">Vintage Car & Truck Parts</a><br>
+                                    <a href="#">Other Motors Parts & Accessories</a>
+                                    <a href="#">Wholesale Motor Parts & Accessories</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">New & Used Cars & Trucks</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">New & Used Boats</a><br>
+                                    <a href="#">Classic Cars & Trucks</a><br>
+                                    <a href="#">Shop Green Vehicles</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">New & Used Motorcycles</a><br>
+                                    <a href="#">Other Vehicles & Trailers</a><br>
+                                    <a href="#">Power sports Vehicles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="ui dividing header"><a href="#">Fashion & Design</a></h4>
+                    <div class="ui two column very relaxed grid">
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Beauty</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Bath & Body Products</a><br>
+                                    <a href="#">Fragrances</a><br>
+                                    <a href="#">Hair Care & Styling Products</a><br>
+                                    <a href="#">Makeup Products</a><br>
+                                    <a href="#">Manicure, Pedicure & Nail Care Products</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Salon & Spa Equipment</a><br>
+                                    <a href="#">Shaving & Hair Removal Products</a><br>
+                                    <a href="#">Skin Care Products</a><br>
+                                    <a href="#">Sun Protection & Tanning Products</a><br>
+                                    <a href="#">Tattoos & Body Art Products</a><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Health & Wellness</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Health Care Products</a><br>
+                                    <a href="#">Medical & Mobility</a><br>
+                                    <a href="#">Natural & Alternative Remedies</a><br>
+                                    <a href="#">Oral Care Products</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Sexual Wellness Products</a><br>
+                                    <a href="#">Vision Care Products</a><br>
+                                    <a href="#">Vitamins & Dietary Supplements</a><br>
+                                    <a href="#">Weight Management Supplements</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui two column very relaxed grid">
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Shoes</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Baby & Toddler Shoes</a><br>
+                                    <a href="#">Boys' Shoes</a><br>
+                                    <a href="#">Girls' Shoes</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Men's Shoes</a><br>
+                                    <a href="#">Women's Shoes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Women's Bags & Handbags</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Luxury Handbags & Accessories</a><br>
+                                    <a href="#">Men's Accessories</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Women's Accessories</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui two column very relaxed grid">
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Jewelry</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Fine Diamond Rings</a><br>
+                                    <a href="#">Engagement & Wedding Jewelry</a><br>
+                                    <a href="#">Fashion Jewelry</a><br>
+                                    <a href="#">Fine Jewelry</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Fine Gemstone Rings</a><br>
+                                    <a href="#">Men's Jewelry</a><br>
+                                    <a href="#">Vintage & Antique Jewelry</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Watches, Parts & Accessories</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Watch Boxes, Cases & Winders</a><br>
+                                    <a href="#">Pocket Watches</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Wristwatch Bands</a><br>
+                                    <a href="#">Wrist watches</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui two column very relaxed grid">
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Kids' Clothing, Shoes & Accessories</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Girl’s Bottoms (Newborn-5T)</a><br>
+                                    <a href="#">Girl’s Outerwear (Newborn-5T)</a><br>
+                                    <a href="#">Girl’s Clothing (Newborn-5T)</a><br>
+                                    <a href="#">Girl’s One-Pieces (Newborn-5T)</a><br>
+                                    <a href="#">Girl’s Outfits & Sets (Newborn-5T)</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Baby & Toddler Shoes</a><br>
+                                    <a href="#">Girl’s Sleepwear (Newborn-5T)</a><br>
+                                    <a href="#">Girl’s Sweaters (Newborn-5T)</a><br>
+                                    <a href="#">Girl’s Tops & T-Shirts (Newborn-5T)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Men's Clothing</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Men's Active wear Tops</a><br>
+                                    <a href="#">Men's Full Suits & Parts of a Suit</a><br>
+                                    <a href="#">Men's Coats & Jackets</a><br>
+                                    <a href="#">Men's Casual Button-Down Shirts</a><br>
+                                    <a href="#">Men's Jeans</a><br>
+                                    <a href="#">Men's Pants</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Men's Shorts</a><br>
+                                    <a href="#">Men's Sweaters</a><br>
+                                    <a href="#">Men's Hoodies & Sweatshirts</a><br>
+                                    <a href="#">Men's Underwear</a><br>
+                                    <a href="#">Men's T-Shirts</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui two column very relaxed grid">
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Women's Clothing</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Women's Activewear Tops</a><br>
+                                    <a href="#">Women's Coats, Jackets & Vests</a><br>
+                                    <a href="#">Women's Dresses</a><br>
+                                    <a href="#">Women's Intimates & Sleepwear</a><br>
+                                    <a href="#">Women's Dresses</a><br>
+                                    <a href="#">Women's Pants</a><br>
+                                    <a href="#">Women's Shorts</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Women's Skirts</a><br>
+                                    <a href="#">Women's Suits & Suit Separates</a><br>
+                                    <a href="#">Women's Sweaters</a><br>
+                                    <a href="#">Women's Hoodies & Sweatshirts</a><br>
+                                    <a href="#">Women's Swimwear</a><br>
+                                    <a href="#">T-Shirts for Women</a><br>
+                                    <a href="#">Women's Tops & Blouses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+
+                        </div>
+                    </div>
+                    <h4 class="ui dividing header"><a href="#">Electronics</a></h4>
+                    <div class="ui two column very relaxed grid">
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Camera & Photo</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Binoculars & Telescopes</a><br>
+                                    <a href="#">Camcorders</a><br>
+                                    <a href="#">Camera & Photo Accessories</a><br>
+                                    <a href="#">Camera Drones</a><br>
+                                    <a href="#">Camera Lenses & Filters</a><br>
+                                    <a href="#">Digital Cameras</a><br>
+                                    <a href="#">Digital Photo Frames</a><br>
+                                    <a href="#">Film Photography Equipment</a><br>
+                                    <a href="#">Camera Flashes & Flash Accessories</a><br>
+                                    <a href="#">Motorcycle Parts</a><br>
+                                    <a href="#">Other Motors Parts & Accessories</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Camera Manuals & Guides</a><br>
+                                    <a href="#">Other Cameras & Photography Equipment</a><br>
+                                    <a href="#">Photo Studio & Lighting Equipment</a><br>
+                                    <a href="#">Camera Replacement Parts & Tools</a><br>
+                                    <a href="#">Camera Tripods & Supports</a><br>
+                                    <a href="#">Video Production & Editing Equipment</a><br>
+                                    <a href="#">Vintage Movie & Photography Equipment</a><br>
+                                    <a href="#">Camera & Photo Wholesale</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Computers, Tablets & More</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Computer Cables & Connectors</a><br>
+                                    <a href="#">Computer Components & Parts</a><br>
+                                    <a href="#">PC Desktops & All-In-One Computers</a><br>
+                                    <a href="#">Computer Drives, Storage & Blank Media</a><br>
+                                    <a href="#">Enterprise Networking & Servers</a><br>
+                                    <a href="#">Home Networking & Connectivity Equipment</a><br>
+                                    <a href="#">Computer Keyboards, Mice & Pointers</a><br>
+                                    <a href="#">Laptop & Desktop Accessories</a><br>
+                                    <a href="#">PC Laptops & Netbooks</a><br>
+                                    <a href="#">Computer, Tablet & Networking Manuals & Resources</a><br>
+                                    <a href="#">Wholesale Computer, Tablet & Networking</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Computer Monitors, Projectors & Accessories</a><br>
+                                    <a href="#">Other Computers, Tablets & Network Equipment, Parts &
+                                        Accessories</a><br>
+                                    <a href="#">Computer Power Protection & Distribution Equipment</a><br>
+                                    <a href="#">Computer Printers, Scanners & Supplies</a><br>
+                                    <a href="#">Computer Software</a><br>
+                                    <a href="#">Tablet & eReaders</a><br>
+                                    <a href="#">Tablet & eReaders Accessories</a><br>
+                                    <a href="#">Tablet & eReaders Parts</a><br>
+                                    <a href="#">Vintage Computers, Parts & Accessories</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Vehicle Electronics & GPS</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">In-Car Portable Accessories</a><br>
+                                    <a href="#">Car Alarms & Security in Consumer Electronics</a><br>
+                                    <a href="#">Car Audio in Consumer Electronics</a><br>
+                                    <a href="#">Car Audio & Video Installation Equipment</a><br>
+                                    <a href="#">Car Video Monitors & Equipment</a><br>
+                                    <a href="#">Car Electronics Accessories</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Car GPS Accessories & Tracking</a><br>
+                                    <a href="#">Car GPS Units</a><br>
+                                    <a href="#">Marine Audio in Consumer Electronics</a><br>
+                                    <a href="#">Other Vehicle Electronics & GPS</a><br>
+                                    <a href="#">Car Radar & Laser Detectors</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Cell Phones, Smart Watches & Accessories</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Cell Phone Batteries</a><br>
+                                    <a href="#">Cell Phone Cables & Adapters</a><br>
+                                    <a href="#">Cell Phone Cases, Covers & Skins</a><br>
+                                    <a href="#">Cell Phone Accessories</a><br>
+                                    <a href="#">Cell Phone & Smartphone Parts</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Cell Phones & Smartphones</a><br>
+                                    <a href="#">Cell Phone Chargers & Cradles</a><br>
+                                    <a href="#">Cell Phone Headsets</a><br>
+                                    <a href="#">Cell Phone Screen protectors</a><br>
+                                    <a href="#">Smart Watches</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">TV, Video & Home Audio Electronics</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Calculators</a><br>
+                                    <a href="#">DVD & Blu-ray players</a><br>
+                                    <a href="#">Other Consumer Electronics</a><br>
+                                    <a href="#">Headphones</a><br>
+                                    <a href="#">Home Audio Components</a><br>
+                                    <a href="#">Home Speakers & Subwoofers</a><br>
+                                    <a href="#">Other Smart Home Electronics</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Home Surveillance Electronics</a><br>
+                                    <a href="#">Media Streamers</a><br>
+                                    <a href="#">Portable Audio & Headphones</a><br>
+                                    <a href="#">TVs</a><br>
+                                    <a href="#">Virtual Reality Headsets, Parts & Accessories</a><br>
+                                    <a href="#">Vintage Electronics</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" style="text-align: left; font-size: small;">
+                            <h5 class="ui dividing header"><a href="#">Video Games & Consoles</a></h5>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <a href="#">Other Video Games & Consoles</a><br>
+                                    <a href="#">Prepaid Gaming Cards</a><br>
+                                    <a href="#">Video Game Replacement Parts & Tools</a><br>
+                                    <a href="#">Video Game Strategy Guides & Cheats</a><br>
+                                    <a href="#">Video Game Accessories</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Video Game Memorabilia</a><br>
+                                    <a href="#">Video Game Merchandise</a><br>
+                                    <a href="#">Wholesale Video Game & Console</a><br>
+                                    <a href="#">Video Games</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="sixteen wide column">
+    <div class="ui vertical footer segment"
+         style="width: 100%;border-top: #0d71bb 3px solid; background-color: #ffffff">
+        <div class="ui center aligned container">
+            <div class="ui stackable  divided grid">
+                <div class="three wide column">
+                    <h4 class="ui header" style="font-family: sans-serif">Group 1</h4>
+                    <div class="ui link list">
+                        <a href="#" class="item">Site Map</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui header" style="font-family: sans-serif">Group 2</h4>
+                    <div class="ui link list">
+
+                        <a href="temp_rec/ContactUs.html" class="item">Contact Us</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui header" style="font-family: sans-serif">Group 3</h4>
+                    <div class="ui link list">
+                        <a href="#" class="item">Terms and Conditions</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <img src="_img/newlogo.png" class="ui centered small image">
+                    <h4 class="ui header">Dealing (pvt) ltd.</h4>
+                    <p>Bid and Sell what you want.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end of footer-->
+<script src="_js/jquery-3.3.1.min.js"></script>
+<script src="_js/semantic.js"></script>
+<script src="_js/popup.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

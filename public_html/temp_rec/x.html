@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../_css/semantic.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+        <link rel="stylesheet" href="../_css/StyleSheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            @font-face {
+                font-family: myFirstFont;
+                src: url(../fonts/Calibri.ttf);
+            }
+
+            * {
+                font-family: myFirstFont;
+            }
+            div{
+                font-family: myFirstFont;
+            }
+            
+            
+            * {box-sizing: border-box;}
+                .img-zoom-container {
+                  position: relative;
+                }
+                .img-zoom-lens {
+                  position: absolute;
+                  border: 1px solid #d4d4d4;
+                  /*set the size of the lens:*/
+                  width: 40px;
+                  height: 40px;
+                }
+                .img-zoom-result {
+                  border: 1px solid #d4d4d4;
+                  /*set the size of the result div:*/
+                  width: 300px;
+                  height: 300px;
+                }
+            
+            
+        </style>
+
+    </head>
+    <body style="background-color: #E5E5E5">
+        <div class="ui grid">
+            <div class="sixteen wide column">
+                <div class="ui secondary mini pointing fixed menu" style="background-color: #0d71bb">
+
+                    <a class="item" href="viewBid.html" style="color: white">
+                        Bids
+                    </a>
+                    <a class="item" href="createAccount&loginAccount.html" style="color: white">
+                        Post Add
+                    </a>
+
+
+
+                    <div class="right menu">
+                        <a class="ui item" href="message.html" style="color: white">
+                            <i class="envelope icon"></i>
+                            Message
+                        </a>
+                        <div class="ui dropdown item" style="color: white">
+                            My Dealing <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item">Summary</a>
+                                <a class="item">Recently viewed</a>
+                                <a class="item">Bids/offers</a>
+                                <a class="item">watch list</a>
+                                <a class="item">Purchase History</a>
+                                <a class="item">Selling</a>
+                                <a class="item">Saved Searches</a>
+                                <a class="item">Saved Sellers</a>
+                                <a class="item">Messages</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="right menu">
+                        <a class="ui item" style="color: white">
+                            <i class="sign in icon"></i>
+                            Login
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+        <div class="ui centered grid">
+            <div class="computer only row">
+            
+            
+              <div class="fourteen wide column">
+                <div class="row">
+
+                </div>
+                <div class="row" style="margin-top: 10px">
+                    
+                    
+                    <div class="column">
+                        
+                        
+                        <div class="ui raised segment">
+                            
+                            <div class="right">
+                                <div class="ui teal massive label" style="margin-left: 90px">iphone 5s Mobile Phone </div>
+                                
+                            </div>
+                            
+                            <div class="ui divider"></div>
+                            <div class="ui grid">
+                                <div class="ui two column row">
+                                    
+                                    <div class="column">
+                                        <div class="ui column" style="margin-left: 90px">
+                                            
+                                            <div class="ui people shape">
+                                             
+                                                  <div class="ui card">
+                                                    <div class="image">
+                                                        <img  id="myimage" src="../_img/d1.jpg">
+                                                    </div>
+                                                  </div>
+                                                    
+                                                
+                                                <div class="img-zoom-container">
+                                                  <div id="myresult" class="img-zoom-result"></div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="column segment">
+                                        <div class="ui form">
+                                            <div class="inline field" ><br>
+                                            <label style="font-size: large">Current bids:</label>
+                                            <label style="color: red; font-size: large">Rs 15000</label><br><br>
+                                            <label style="font-size: large">Your Bid:</label>
+                                            <input type="text" class="ui small" style="width: 120px" placeholder="Rs">
+                                            <button class="ui button" style="background-color: #0d71bb ; color: white">Place bid</button><br>
+                                            <label>Time Left :</label>
+                                            <label>1h 59m 7s(Dec 02 2018 &nbsp; 22:50:28PHT)</label><br>
+                                            <label>Warranty :</label>
+                                            <label>Warranty &nbsp;&nbsp;Availability </label><br><br>
+                                            <button class="ui toggle button" style="font-style: italic" >
+                                                <i class="icon eye"></i>Add to watch list
+                                            </button>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        <a class="ui red ribbon label">Description</a>
+                                        <br>
+                                        <p>dbnsdkbsdjs  dbsnsdkk jbdjbkhd kbkbdk kdbkdnkj bdkjbkjsdn kjdskjn kjdnjndkj djnjcn dkjnk n
+                                        dkjndlndln jnndl jdndn ndld jndn ndlkndn lndlnl
+                                         ndln lkdn ndndldk dlk mdl kmldlmmd;ml kddmm lkdmdmkn  idj ;djdd k
+                                         dndknkdnk
+                                         jhjsjhjhjshjhjh
+                                        </p>
+                                        <div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <button class="ui facebook button">
+                                          <i class="facebook icon"></i>
+                                          Facebook
+                                        </button>
+                                        <button class="ui twitter button">
+                                          <i class="twitter icon"></i>
+                                          Twitter
+                                        </button>
+                                         <button class="ui instagram button">
+                                          <i class="instagram icon"></i>
+                                          Instagram
+                                        </button>
+                                        <button class="ui youtube button">
+                                          <i class="youtube icon"></i>
+                                          YouTube
+                                        </button>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                   
+
+                                </div>
+                                
+                            </div>
+                        
+                    </div>
+                         
+                </div>
+                    
+                    
+                    
+                     <div class="ui segment twelve wide column" style="font-size: large; font-family: cursive">
+
+                <div class="wide column">More Items</div>
+                <div class="ui middle align centered grid">
+                    <div class="one wide column" style="padding-top: 5%;padding-bottom: 5%;"><i class="angle double left huge icon"></i></div>
+                    <div class="centered aligned fourteen wide column">
+                        <div class="ui centeredr grid">
+                            <div class="sixteen wide column">
+                                <div class="ui slider ui images">
+                                    <img class="ui segment centered image" height="150" src="../_img/d10.jpg">
+                                    <img class="ui segment centered image" height="150" src="../_img/d11.jpg">
+                                    <img class="ui segment centered image" height="150" src="../_img/d4.jpg">
+                                    <img class="ui segment centered image" height="150" src="../_img/d5.jpg">
+                                    <img class="ui segment centered image" height="150" src="../_img/d6.jpg">
+                                    <img class="ui segment centered image" height="150" src="../_img/d7.jpg">
+                                    
+                                   
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--<img class="ui image" src="_img/car.png">-->
+                        <!--                            <img class="ui segment image" src="_img/car.png">
+                                                    <img class="ui segment image" src="_img/car.png">-->
+                    </div>
+                    <div class="one wide column" style="padding-top: 5%;padding-bottom: 5%;"><i class="angle double right huge icon"></i></div>
+                </div>
+            </div>
+
+
+                   
+
+
+
+
+                </div>
+            </div>
+        </div>
+            <div class="mobile only row">
+                <div class="fourteen wide column">
+                    
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="column">
+                            <div class="ui raised segment">
+                                <div class="right">
+                                <div class="ui teal  label " style="margin-left: 55px; width: 150px">iphone 5s Mobile Phone </div>
+                                </div>
+                                <div class="ui divider"></div>
+                                <div class="ui grid">
+                                    <div class="ui two column row">
+                                        
+                                       <div class="column">
+                                        <div class="ui column" style="margin-left: 5px">
+                                            
+                                            <div class="ui people shape">
+                                             
+                                                <div class="ui card" style="width: 150px; margin-left: 50px">
+                                                    <div class="image">
+                                                        <img id="myimage2" src="../_img/d1.jpg">
+                                                    </div>
+                                                <div class="img-zoom-container">
+                                                  <div id="myresult2" class="img-zoom-result"  style="width: 150px; height: 200px"></div>
+                                                </div>
+                                                  
+                                            </div>
+                                            <div class="ui form" style="margin-left: 20px">
+                                            <div class="field" ><br>
+                                                <div class="inline field">
+                                                     <label style="font-size: 15px">Current bids:</label>
+                                                     <label style="color: red; font-size: 20px">Rs 15000</label>
+                                                </div>
+                                           
+                                            
+                                            
+                                                <div class="inline field">
+                                                <label style="font-size: 15px">Your Bid:</label>
+                                                <input type="text" class="ui small" style="width: 100px; " placeholder="Rs">
+                                            </div>
+                                            
+                                            
+                                            <button class="ui button" style="background-color: #0d71bb ; color: white; width: 150px; margin-left: 45px">Place bid</button><br>
+                                            
+                                            <br>
+                                            <br>
+                                            
+                                                <label style="font-size: 20px">Time Left :</label>
+                                                <label style="margin-left: 5px; color: #0d71bb">1h 59m 7s(Dec 02 2018 &nbsp; 22:50:28PHT)</label>
+                                                <label style="font-size: 20px ">Warranty :</label>
+                                                <label style="color: #0d71bb"> Warranty &nbsp;&nbsp;Availability </label>
+                                            
+                                            
+                                            
+                                                <br>
+                                                <br>
+                                            <button class="ui toggle button" style="font-style: italic; margin-left: 10px; width: 200px; height:40px ">
+                                                <i class="icon eye"></i>Add to watch list
+                                            </button>
+                                            </div>
+                                            <br>
+                                            
+                                            
+                                            <a class="ui red ribbon label">Description</a>
+                                                <br>
+                                                <p>dbnsdkbsdjs  dbsnsdkk jbdjbkhd kbkbdk kdbkdnkj bdkjbkjsdn kjdskjn kjdnjndkj djnjcn dkjnk n
+                                                dkjndlndln jnndl jdndn ndld jndn ndlkndn lndlnl
+                                                 ndln lkdn ndndldk dlk mdl kmldlmmd;ml kddmm lkdmdmkn  idj ;djdd k
+                                                 dndknkdnk
+                                                 jhjsjhjhjshjhjh
+                                                </p>
+                                        </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                        
+                                  </div>
+                              </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                        
+                         <div class="ui segment twelve wide column" style="font-size: large; font-family: cursive">
+
+                        <div class="wide column">More Items</div>
+                        <div class="ui middle align centered grid">
+                            <div class="one wide column" style="padding-top: 5%;padding-bottom: 5%;"><i class="angle double left huge icon"></i></div>
+                            <div class="centered aligned fourteen wide column">
+                                <div class="ui centeredr grid">
+                                    <div class="sixteen wide column">
+                                        <div class="ui slider ui images">
+                                            <img class="ui segment centered image" height="150" src="../_img/d10.jpg">
+                                            <img class="ui segment centered image" height="150" src="../_img/d11.jpg">
+                                            <img class="ui segment centered image" height="150" src="../_img/d4.jpg">
+                                            <img class="ui segment centered image" height="150" src="../_img/d5.jpg">
+                                            <img class="ui segment centered image" height="150" src="../_img/d6.jpg">
+                                            <img class="ui segment centered image" height="150" src="../_img/d7.jpg">
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<img class="ui image" src="_img/car.png">-->
+                                <!--                            <img class="ui segment image" src="_img/car.png">
+                                                            <img class="ui segment image" src="_img/car.png">-->
+                            </div>
+                            <div class="one wide column" style="padding-top: 5%;padding-bottom: 5%;"><i class="angle double right huge icon"></i></div>
+                        </div>
+                    </div>
+ 
+                        
+                        
+                        
+                        
+                        
+                </div>
+            </div>
+
+        </div>
+            
+            
+            <div class="tablet only row">
+                 <div class="fourteen wide column">
+                    
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="column">
+                            <div class="ui raised segment">
+                                <div class="right">
+                                <div class="ui teal  label " style="margin-left: 150px; width: 230px; font-size: 20px">iphone 5s Mobile Phone </div>
+                                </div>
+                                <div class="ui divider"></div>
+                                <div class="ui grid">
+                                    <div class="ui two column row">
+                                        
+                                       <div class="column">
+                                        <div class="ui column" style="margin-left: 5px">
+                                            
+                                            <div class="ui people shape">
+                                             
+                                                <div class="ui card" style="width: 250px; margin-left: 50px">
+                                                    <div class="image">
+                                                        <img id="myimage" src="../_img/d1.jpg">
+                                                    </div>
+                                                    
+                                                    <div class="img-zoom-container">
+                                                  <div id="myresult" class="img-zoom-result"  style="width: 250px"></div>
+                                                </div>
+                                            </div>
+                                               
+                                            
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                        
+                                  </div>
+                                        <div class="column">
+                                            <div class="ui form" style="margin-left: 20px">
+                                            <div class="field" ><br>
+                                                <div class="inline field">
+                                                     <label style="font-size: 15px">Current bids:</label>
+                                                     <label style="color: red; font-size: 20px">Rs 15000</label>
+                                                </div>
+                                           
+                                            
+                                            
+                                                <div class="inline field">
+                                                <label style="font-size: 15px">Your Bid &nbsp &nbsp &nbsp :</label>
+                                                <input type="text" class="ui small" style="width: 100px; " placeholder="Rs">
+                                            </div>
+                                            
+                                            
+                                            <button class="ui button" style="background-color: #0d71bb ; color: white; width: 150px; margin-left: 45px">Place bid</button><br>
+                                            
+                                            <br>
+                                            <br>
+                                            
+                                                <label style="font-size: 20px">Time Left :</label>
+                                                <label style="margin-left: 5px; color: #0d71bb">1h 59m 7s(Dec 02 2018 &nbsp; 22:50:28PHT)</label>
+                                                <label style="font-size: 20px ">Warranty :</label>
+                                                <label style="color: #0d71bb"> Warranty &nbsp;&nbsp;Availability </label>
+                                            
+                                            
+                                            
+                                                <br>
+                                                <br>
+                                            <button class="ui toggle button" style="font-style: italic; margin-left: 10px; width: 200px; height:40px ">
+                                                <i class="icon eye"></i>Add to watch list
+                                            </button>
+                                            </div>
+                                            <br>
+                                            
+                                            
+                                            <a class="ui red ribbon label">Description</a>
+                                                <br>
+                                                <p>dbnsdkbsdjs  dbsnsdkk jbdjbkhd kbkbdk kdbkdnkj bdkjbkjsdn kjdskjn kjdnjndkj djnjcn dkjnk n
+                                                dkjndlndln jnndl jdndn ndld jndn ndlkndn lndlnl
+                                                 ndln lkdn ndndldk dlk mdl kmldlmmd;ml kddmm lkdmdmkn  idj ;djdd k
+                                                 dndknkdnk
+                                                 jhjsjhjhjshjhjh
+                                                </p>
+                                        </div>
+                                    </div>
+                                        
+                                        
+                                        
+                                        
+                              </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <div class="ui segment twelve wide column" style="font-size: large; font-family: cursive">
+
+                            <div class="wide column">More Items</div>
+                            <div class="ui middle align centered grid">
+                                <div class="one wide column" style="padding-top: 5%;padding-bottom: 5%;"><i class="angle double left huge icon"></i></div>
+                                <div class="centered aligned fourteen wide column">
+                                    <div class="ui centeredr grid">
+                                        <div class="sixteen wide column">
+                                            <div class="ui slider ui images">
+                                                <img class="ui segment centered image" height="150" src="../_img/d10.jpg">
+                                                <img class="ui segment centered image" height="150" src="../_img/d11.jpg">
+                                                <img class="ui segment centered image" height="150" src="../_img/d4.jpg">
+                                                <img class="ui segment centered image" height="150" src="../_img/d5.jpg">
+                                                <img class="ui segment centered image" height="150" src="../_img/d6.jpg">
+                                                <img class="ui segment centered image" height="150" src="../_img/d7.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="one wide column" style="padding-top: 5%;padding-bottom: 5%;"><i class="angle double right mini icon"></i></div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                </div>
+            </div>
+                
+                
+                
+            </div>
+            
+            
+            
+            
+        <br>
+        <br>
+        
+        
+        
+        
+
+       <div class="sixteen wide column">
+                <div class="ui vertical footer segment" style="width: 100%;border-top: #0d71bb 3px solid; background-color: #ffffff" >
+                    <div class="ui center aligned container">
+                        <div class="ui stackable  divided grid">
+                            <div class="three wide column">
+                                <h4 class="ui header" style="font-family: sans-serif">Group 1</h4>
+                                <div class="ui link list">
+                                    <a href="#" class="item">Site Map</a>
+                                    <a href="#" class="item">Link Two</a>
+                                    <a href="#" class="item">Link Three</a>
+                                    <a href="#" class="item">Link Four</a>
+                                </div>
+                            </div>
+                            <div class="three wide column">
+                                <h4 class="ui header" style="font-family: sans-serif">Group 2</h4>
+                                <div class="ui link list">
+                                   
+                                    <a href="ContactUs.html" class="item">Contact Us</a>
+                                    <a href="#" class="item">Link Three</a>
+                                    <a href="#" class="item">Link Four</a>
+                                </div>
+                            </div>
+                            <div class="three wide column">
+                                <h4 class="ui header" style="font-family: sans-serif">Group 3</h4>
+                                <div class="ui link list">
+                                    <a href="#" class="item">Terms and Conditions</a>
+                                    <a href="#" class="item">Link Two</a>
+                                    <a href="#" class="item">Link Three</a>
+                                    <a href="#" class="item">Link Four</a>
+                                </div>
+                            </div>
+                            <div class="seven wide column">
+                                <img src="../_img/newlogo.png" class="ui centered small image">
+                                <h4 class="ui header">Dealing (pvt) ltd.</h4>
+                                <p>Bid and Sell what you want.</p>
+
+                            </div>
+                        </div>
+
+
+                    
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+
+        <script src="../_js/jquery-3.3.1.min.js"></script>
+        <script src="../_js/semantic.js"></script>
+        <script src="../_js/popup.js"></script>
+        <script type="text/javascript">
+                           var x = 0;
+//                $(".select-category").children("div").click(function () {
+//                    $(this).css("background-color", "#e6e6e6");
+//                    $(this).css("opacity", "0.5");
+//
+//                    var data = $(this).find("a").attr("data-bind").split(",");
+//                    var mainHtmtl = "";
+//                    for (var i = 0; i < data.length; i++) {
+//                        var myHtml = "<div class=\"item\"><i class=\"large github middle aligned icon\"></i><div class=\"content\"><a href='tezt.html' onClick=\"nextPage()\" class=\"header\">\n\
+//            " + data[i] + "</a></div></div>";
+//                        mainHtmtl = mainHtmtl + myHtml;
+//
+//                    }
+//                    alert(data[0].split('[A-Za-z]\-')[0]);
+//                    $("#select-sub-category").html(mainHtmtl);
+//                });
+
+
+                var x = 0;
+                $(".select-divition").children("div").click(function () {
+                    var data = $(this).find("a").attr("data-bind").split(",");
+                    var mainHtml = "";
+                    for (var i = 0; i < data.length; i++) {
+                        var myHtml = "<div class=\"item\"><i class=\"large github middle aligned icon\"></i><div class=\"content\"><a class=\"header\">\n\
+            " + data[i] + "</a></div></div>";
+                        mainHtml = mainHtml + myHtml;
+
+                    }
+                    $("#select-sub-divition").html(mainHtml);
+                    
+                    
+                    //****Location Liner****
+                    $(".select-divition div.item").each(function (index, element) {
+                                    var x = $(element).children("div").children("a").attr("data-bind");
+                                    if(x == data){
+                                        $(element).css("background-color", "#e6e6e6");
+                                        $(element).css("opacity", "0.5");
+                                    }else{
+                                       $(element).css("background-color", "white");
+                                       $(element).css("opacity", "1");
+                                   }
+                                });
+                                
+                    //******End Location Liner*****
+                    
+                    
+                    
+                });
+
+                function nextPage() {
+
+                }
+
+
+                var a = [
+                    {
+                        "display_name": "Air Conditions&Electrical Fittings",
+                        "page_name": "A_Air_Conditions&Electrical_Fittings.html",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Audio&Mp3",
+                        "page_name": "A_Audio&Mp3.html",
+                        "id": 2
+                    },
+                    {
+                        "display_name": "Cameras an CamCorders",
+                        "page_name": "A_Cameras&CamCorders",
+                        "id": 3
+                    },
+                    {
+                        "display_name": "Computer Accessorices",
+                        "page_name": "A_Computer_Accessories.html",
+                        "id": 4
+
+                    },
+                    {
+                        "display_name": "Computer Tablets",
+                        "page_name": "A_Computer_Tablets.html",
+                        "id": 5
+
+                    },
+                    {
+                        "display_name": "Electronic Home Applicances",
+                        "page_name": "A_Electronic_Home_Applicances.html",
+                        "id": 6
+
+                    },
+                    {
+                        "display_name": "Mobile Phone Accessories",
+                        "page_name": "A_Mobile_Phone_Accessories.html",
+                        "id": 7
+
+
+                    },
+                    {
+                        "display_name": "Other Electronics",
+                        "page_name": "A_Other_Electronics.html",
+                        "id": 8
+
+
+                    },
+                    {
+                        "display_name": "Tv Video Acessories",
+                        "page_name": "A_TV_&.html",
+                        "id": 9
+
+
+                    },
+                    {
+                        "display_name": "TVs",
+                        "page_name": "A_TVs.html",
+                        "id": 10
+
+
+                    },
+                    {
+                        "display_name": "Tv Video Games Console",
+                        "page_name": "A_Video_Games&Console.html",
+                        "id": 11
+
+
+                    }];
+                var b = [
+                    {
+                        "display_name": "Auto Parts an Acessories",
+                        "page_name": "B_Auto_Parts&Acessories.html",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Boats an Water Transport",
+                        "page_name": "B_Boats&Water_Transport.html",
+                        "id": 2
+
+                    },
+                    {
+                        "display_name": "Car",
+                        "page_name": "B_Car.html",
+                        "id": 3
+
+                    },
+                    {
+                        "display_name": "Heary Machinry Tractors",
+                        "page_name": "B_Heary_Machinry&Tractors.html",
+                        "id": 4
+
+                    },
+                    {
+                        "display_name": "Moterbikes an Scooters",
+                        "page_name": "B_Moterbikes&Scooters.html",
+                        "id": 5
+
+                    },
+                    {
+                        "display_name": "Push Cycles",
+                        "page_name": "B_Push_Cycles.html",
+                        "id": 6
+
+                    },
+                    {
+                        "display_name": "Three  wheelers",
+                        "page_name": "B_Three_wheelers.html",
+                        "id": 7
+
+                    },
+                    {
+                        "display_name": "Van Busess Lorries",
+                        "page_name": "B_Van,Busess&Lorries.html",
+                        "id": 8
+                    },
+
+                    {
+                        "display_name": "Auto Services",
+                        "page_name": "B_Auto_Services.html",
+                        "id": 9
+
+
+                    }];
+                var c = [
+                    {
+                        "display_name": "Apartments",
+                        "page_name": "C_Apartments.html",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Commercial Property",
+                        "page_name": "C_Commercial_Property.html",
+                        "id": 2
+                    },
+                    {
+                        "display_name": "Houses",
+                        "page_name": "C_Houses.html",
+                        "id": 3
+                    },
+
+                    {
+                        "display_name": "Land",
+                        "page_name": "C_Land.html",
+                        "id": 4
+
+                    }];
+                var d = [
+                    {
+                        "display_name": "Bathroom Sanitory Ware",
+                        "page_name": "D_Bathroom&Sanitory_Ware.html",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Building Material an Tools",
+                        "page_name": "D_Building_Material&Tools.html",
+                        "id": 2
+
+                    },
+                    {
+                        "display_name": "Furniture",
+                        "page_name": "D_Furniture.html",
+                        "id": 3
+                    },
+                    {
+                        "display_name": "Garden",
+                        "page_name": "D_Garden.html",
+                        "id": 4
+                    },
+                    {
+                        "display_name": "Home Decor",
+                        "page_name": "D_Home_Decor.html",
+                        "id": 5
+
+                    },
+                    {
+                        "display_name": "Kitchen Item",
+                        "page_name": "D_Kitchen_item.html",
+                        "id": 6
+
+                    },
+                    {
+                        "display_name": "Other Home Item",
+                        "page_name": "D_Other_Home_item.html",
+                        "id": 7
+
+
+                    }];
+                var e = [
+                    {
+                        "display_name": "Bags an Luggage",
+                        "page_name": "E_Bags&Luggage.html",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Clothing",
+                        "page_name": "E_Clothing.html",
+                        "id": 2
+                    },
+                    {
+                        "display_name": "Health an Beauty Products",
+                        "page_name": "E_Health&Beauty_Products.html",
+                        "id": 3
+                    },
+                    {
+                        "display_name": "Jewellery",
+                        "page_name": "E_Jewellery.html",
+                        "id": 4
+                    },
+                    {
+                        "display_name": "Other Fashion Accessories",
+                        "page_name": "E_Other_Fashion_Accessories.html",
+                        "id": 5
+                    },
+                    {
+                        "display_name": "Other Personal items",
+                        "page_name": "E_Other_personal_items.html",
+                        "id": 6
+                    },
+                    {
+                        "display_name": "Shoes an Fotwear",
+                        "page_name": "E_Shoes&Footwear.html",
+                        "id": 7
+                    },
+                    {
+                        "display_name": "Sunglasses an opticians",
+                        "page_name": "E_Sunglasses&Opticians.html",
+                        "id": 8
+                    },
+                    {
+                        "display_name": "Watches",
+                        "page_name": "E_Watches.html",
+                        "id": 9
+
+                    }];
+                var f = [
+                    {
+                        "display_name": "Art an Collectibles",
+                        "page_name": "F_Art&Collectibles.html",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Childrens Item",
+                        "page_name": "F_Childrens_item.html",
+                        "id": 2
+
+                    },
+                    {
+                        "display_name": "Music Book an Movies",
+                        "page_name": "F_Music_Book&Movies.html",
+                        "id": 3
+                    },
+                    {
+                        "display_name": "Musical Instruments",
+                        "page_name": "F_Musical_instruments.html",
+                        "id": 4
+                    },
+                    {
+                        "display_name": "Other Hoby Sport an Kids Items",
+                        "page_name": "F_Other_Hoby_Sport&Kids_items.html",
+                        "id": 5
+                    },
+                    {
+                        "display_name": "Travl Events an Tickets",
+                        "page_name": "F_Travl_Events&Tickets.html",
+                        "id": 6
+
+
+                    }];
+                var i = [
+                    {
+                        "display_name": "Art an Collectibles",
+                        "page_name": "I_HealthCare_Medical_Equipment&Supplies.html",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Industry Tools an Machinery",
+                        "page_name": "I_Industry_Tools&Machinery.html",
+                        "id": 2
+                    },
+                    {
+                        "display_name": "Licences an Titles",
+                        "page_name": "I_Licences&Titles.html",
+                        "id": 3
+                    },
+                    {
+                        "display_name": "Office Equipment Supples an Stationey",
+                        "page_name": "I_Office_Equipment_Supples&Stationey.html",
+                        "id": 4
+                    },
+                    {
+                        "display_name": "Other Business Services",
+                        "page_name": "I_Other_Business_Services.html",
+                        "id": 5
+                    },
+                    {
+                        "display_name": "Raw Materials an Wholesale Lots",
+                        "page_name": "I_Raw_Materials&Wholesale_Lots.html",
+                        "id": 6
+                    },
+                    {
+                        "display_name": "Solear an Generrators",
+                        "page_name": "I_Solar&Generators.html",
+                        "id": 7
+
+
+
+                    }];
+
+                var j = [
+                    {
+                        "display_name": "Domestic Services",
+                        "page_name": "J_Domestic_Services.html",
+                        "id": 1
+
+                    },
+                    {
+                        "display_name": "Event an Entertainment",
+                        "page_name": "J_Event&Entertainment.html",
+                        "id": 2
+
+
+                    },
+                    {
+                        "display_name": "Health an Wellbeing",
+                        "page_name": "J_Health&Wellbeing.html",
+                        "id": 3
+
+                    },
+                    {
+                        "display_name": "Other Services",
+                        "page_name": "J_Other_Services.html",
+                        "id": 4
+
+                    },
+                    {
+                        "display_name": "Trade Services",
+                        "page_name": "J_Trade_Services.html",
+                        "id": 5
+
+                    },
+                    {
+                        "display_name": "Travel an Tourism",
+                        "page_name": "J_Travel&Tourism.html",
+                        "id": 6
+
+
+                    }];
+
+                var k = [
+                    {
+                        "display_name": "Higher Education",
+                        "page_name": "K_Higher_Education.html",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Other Education",
+                        "page_name": "K_Other_Education.html",
+                        "id": 2
+                    },
+                    {
+                        "display_name": "Textbooks",
+                        "page_name": "K_Textbooks.html",
+                        "id": 3
+                    },
+                    {
+                        "display_name": "Tuition",
+                        "page_name": "K_Tuition.html",
+                        "id": 4
+                    },
+                    {
+                        "display_name": "Vocational Institutes",
+                        "page_name": "K_Vocational_Institutes.html",
+                        "id": 5
+
+                    }];
+                var l = [
+                    {
+                        "display_name": "Animal Accessories",
+                        "page_name": "L_Animal_Accessories.html",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Farm Animalss",
+                        "page_name": "L_Farm_Animalss.html",
+                        "id": 2
+
+                    },
+                    {
+                        "display_name": "Other Animals",
+                        "page_name": "L_Other_Animals",
+                        "id": 3
+
+                    },
+                    {
+                        "display_name": "Pets",
+                        "page_name": "L_Pets",
+                        "id": 4
+
+                    },
+                    {
+                        "display_name": "Veterinary Servies",
+                        "page_name": "L_Veterinary_Servies",
+                        "id": 5
+                    },
+                    {
+                        "display_name": "Pet Food",
+                        "page_name": "L_pet_Food",
+                        "id": 6
+
+                    }];
+
+                var m = [
+                    {
+                        "display_name": "Crops Seeds an Plants",
+                        "page_name": "M_Crops_Seeds&Plants",
+                        "id": 1
+                    },
+                    {
+                        "display_name": "Farming Tools an Machinery",
+                        "page_name": "M_Farming_Tools&Machinery",
+                        "id": 2
+                    },
+                    {
+                        "display_name": "Food",
+                        "page_name": "M_Food",
+                        "id": 3
+                    },
+                    {
+                        "display_name": "Other Food an Agriculture",
+                        "page_name": "M_Other_Food&Agriculture",
+                        "id": 4
+
+                    }];
+
+                var n = [
+                    {
+                        "display_name": "Other",
+                        "page_name": "N_Other",
+                        "id": 1
+                    }];
+                var pageDate = {
+                    "a": a,
+                    "b": b,
+                    "c": c,
+                    "d": d,
+                    "e": e,
+                    "f": f,
+                    "i": i,
+                    "j": j,
+                    "k": k,
+                    "l": l,
+                    "m": m,
+                    "n": n,
+                    
+                };
+//                pageDate.push(a);
+//                pageDate.push(b);
+                $(".select-category").children("div").click(function () {
+//                    $(this).css("background-color", "#e6e6e6");
+//                    $(this).css("opacity", "0.5");
+
+//                    var data = $(this).find("a").attr("data-bind").split(",");
+                    var data = $(this).find("a").attr("data-bind");
+                    if (data != "" || data != undefined) {
+                        var temp = "" + data;
+                        var array = pageDate[temp];
+                        var mainHtmtl = "";
+                        for (var i = 0; i < array.length; i++) {
+                            var myHtml = "<div class=\"item\"><i class=\"large github middle aligned icon\"></i><div class=\"content\"><a href=\"" + array[i]['page_name'] + "\" onClick=\"nextPage()\" class=\"header\">\n\ " + array[i]['display_name'] + "</a></div></div>";
+                            mainHtmtl = mainHtmtl + myHtml;
+                        }
+                        $("#select-sub-category").html(mainHtmtl);
+                    }
+                    $(".select-category div.item").each(function (index, element) {
+                        var x = $(element).children("div").children("a").attr("data-bind");
+                        if(x == data){
+                            $(element).css("background-color", "#e6e6e6");
+                            $(element).css("opacity", "0.5");
+                        }else{
+                           $(element).css("background-color", "white");
+                           $(element).css("opacity", "1");
+                       }
+                    });
+//                    var mainHtmtl = "";
+//                    for (var i = 0; i < data.length; i++) {
+//                        var myHtml = "<div class=\"item\"><i class=\"large github middle aligned icon\"></i><div class=\"content\"><a href='tezt.html' onClick=\"nextPage()\" class=\"header\">\n\
+//            " + data[i] + "</a></div></div>";
+//                        mainHtmtl = mainHtmtl + myHtml;
+//
+//                    }
+//                    alert(data[0].split('[A-Za-z]\-')[0]);
+                    $("#select-sub-category").html(mainHtmtl);
+                });
+                
+                //image zoomer 
+                
+                function imageZoom(imgID, resultID) {
+              var img, lens, result, cx, cy;
+              img = document.getElementById(imgID);
+              result = document.getElementById(resultID);
+              /*create lens:*/
+              lens = document.createElement("DIV");
+              lens.setAttribute("class", "img-zoom-lens");
+              /*insert lens:*/
+              img.parentElement.insertBefore(lens, img);
+              /*calculate the ratio between result DIV and lens:*/
+              cx = result.offsetWidth / lens.offsetWidth;
+              cy = result.offsetHeight / lens.offsetHeight;
+              /*set background properties for the result DIV:*/
+              result.style.backgroundImage = "url('" + img.src + "')";
+              result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+              /*execute a function when someone moves the cursor over the image, or the lens:*/
+              lens.addEventListener("mousemove", moveLens);
+              img.addEventListener("mousemove", moveLens);
+              /*and also for touch screens:*/
+              lens.addEventListener("touchmove", moveLens);
+              img.addEventListener("touchmove", moveLens);
+              function moveLens(e) {
+                var pos, x, y;
+                /*prevent any other actions that may occur when moving over the image:*/
+                e.preventDefault();
+                /*get the cursor's x and y positions:*/
+                pos = getCursorPos(e);
+                /*calculate the position of the lens:*/
+                x = pos.x - (lens.offsetWidth / 2);
+                y = pos.y - (lens.offsetHeight / 2);
+                /*prevent the lens from being positioned outside the image:*/
+                if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+                if (x < 0) {x = 0;}
+                if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+                if (y < 0) {y = 0;}
+                /*set the position of the lens:*/
+                lens.style.left = x + "px";
+                lens.style.top = y + "px";
+                /*display what the lens "sees":*/
+                result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+              }
+              function getCursorPos(e) {
+                var a, x = 0, y = 0;
+                e = e || window.event;
+                /*get the x and y positions of the image:*/
+                a = img.getBoundingClientRect();
+                /*calculate the cursor's x and y coordinates, relative to the image:*/
+                x = e.pageX - a.left;
+                y = e.pageY - a.top;
+                /*consider any page scrolling:*/
+                x = x - window.pageXOffset;
+                y = y - window.pageYOffset;
+                return {x : x, y : y};
+              }
+            }
+
+                
+                
+                
+                //image zoomer
+        </script>
+        <script>
+        // Initiate zoom effect:
+        imageZoom("myimage", "myresult");
+        imageZoom("myimage2", "myresult2");
+        </script>
+
+    </body>
+</html>

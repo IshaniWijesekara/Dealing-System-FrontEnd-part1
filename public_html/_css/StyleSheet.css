@@ -1,0 +1,116 @@
+body{
+    background-color: #e8e8e8;
+}
+p {
+    font-family: Carme;
+    font-size: 13px;
+}
+/*Start Navi*/
+.column navi{
+    width: 100%;
+}
+.item ob{
+    width: 150px;
+}
+.ui icon input{
+    width: 300px;
+}
+/*End Navi*/
+/*start header*/
+
+/*End Header*/
+/*Start category*/
+.phara{
+    font-size: small;
+    font-family: Carme;
+    text-align: center;
+}
+footer.footer {
+    text-align: center;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+}
+.font_re{
+    font-family: Carme;
+}
+/*end Category*/
+
+/*Start Footer*/
+.ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+}
+
+
+/*media*/
+/*.mySlides {display: none;};*/
+/*@font-face {*/
+    /*font-family: myFirstFont;*/
+    /*src: url(fonts/Calibri.ttf);*/
+/*}*/
+
+/** {*/
+    /*font-family: myFirstFont;*/
+/*}*/
+/*div{*/
+    /*font-family: myFirstFont;*/
+
+/*}*/
+
+
+
+@media screen and(max-width: 992px){
+    body{
+        background-color: blue;
+        color: white;
+    }
+
+
+
+
+    #content {
+        min-height: 100px;
+    }
+    .ui.grid{
+        padding: 0 !important;
+    }
+    .pushable.segment{
+        margin: 0 !important;
+    }
+
+    .fourteen.wide.computer.column{
+
+
+    }
+
+
+}
+
+.input{
+    height: 38px ;
+    margin-left: 12.5px ;
+    width: 300px;
+    margin-top: 8px;
+} 
+
+#uiDropdown{
+    height: 6px ; 
+    margin-top: 10px;
+}
+#uiDropdown2{
+    height: 6px ;
+    margin-top: 5px;
+}
+
+#findButton{
+    width: 150px ;
+    margin-top: 9px ;
+    height: 40px;
+}
+#searchBar{
+    height: 36px ;
+    margin-top: 7.4px ;
+    width: 350px;
+    border-radius: 0px !important;
+    
+}

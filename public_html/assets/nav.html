@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../_css/semantic.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/flag.min.css'>
+        <link rel="stylesheet" href="../_css/StyleSheet.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href='https://fonts.googleapis.com/css?family=Carme' rel='stylesheet'>
+    </head>
+    <body>
+        <!--Start Navigation Bar-->
+        <div class="ui centered grid">
+            <div class="computer only row">
+
+                <div class="column navi">
+                    <div class="ui centered grid four menu" style="background-color: #0d71bb">
+                        <div class="item">
+                            <div class="left">
+                                <a class="ui" href="#"><img class="ui center tiny image" src="../_img/newlogo1.png"/></a>
+                            </div>
+                        </div>
+                        <div class="item ob">
+                            <div class="main">
+                                <div class="ui icon dropdown" onclick="viewLocation()">
+                                    <label style="color: white">Location</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ob">
+                            <div class="right">
+                                <div class="ui icon dropdown" onclick="viewCategory()">
+                                    <label style="color: white">Category</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ui icon input">
+                                <input type="text" placeholder="Search...">
+                                <i class="search link icon"></i>
+                            </div>
+                        </div>
+                        <!--<div class="ui section divider"></div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="mobile tablet only row">
+                <div class="column">
+                    <div class="ui menu">
+                        <div class="ui dropdown">
+                            <div class="text">Dealing</div>
+                            <i class="bars icon"></i>
+                            <div class="menu">
+                                <div class="item" onclick="viewLocation()">Location</div>
+                                <div class="item" onclick="viewCategory()">Category</div>
+                                <div class="item">Contact us</div>
+                                <div class="item">About us</div>
+                            </div>
+                        </div>
+                        <div class="right item">
+                            <div class="ui action input">
+                                <input type="text" placeholder="Navigate to...">
+                                <div class="ui button">Go</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Navigation Bar-->
+
+        <!--location Model -->
+        <div class="ui modal" id="location-modal">
+            <i class="close icon"></i>
+            <div class="header">
+                Select a City Or Division
+            </div>
+            <div class="scrolling content">
+
+                <div class="ui segment">
+                    <div class="ui dividing medium header">
+                        Select Location
+                    </div>
+                    <div class="ui two column grid">
+                        <div class="column">
+                            <div class="ui relaxed divided list select-divition">
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Kottawa,Colombo 6,Dehiwala,Nugegoda">Collombo</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Galle,Elpitiya,Ambalangoda,Hikkaduwa,Baddegama">Galle</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Katugastota,Gampola,Peradeniya,Kundasale">Kandy</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Sainthamarutha,Akkarapattuwa,Ampara,Kamunai">Ampara</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Anuradapura,Kekirawa,Tabuttegama,Medawachchiya,Eppawala">Anuradapura</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Badulla,Bandarawela,Welimada,Mahiyanganaya,Hali Ela">Badulla</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Gampha,Negambo,Kelaniya,Ja-ela,Kaduwatha">Gampha</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Tangalla,Beliatta,Ambalantota,Thissamaharama,Hambantota">Hambantota</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Jaffna,Nallur,Chavakachceri">Jaffna</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Kalutara,Horana,Panadura,Bandaragama,Matugama">Kalutara</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Kagalle,Mawanella,Warakapola,Rambukkana,Ruwanwella">Kegalla</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Kilinochchi">Kilinochchi</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Kurunagala,Kuliyapitiya,Pannala,Nurammala,Wariyapola">Kurunagala</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Mannar">Mannar</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Matale,Dambulla,Galewela,Ukuwela,Sigiriya">Matale</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Moneragala,wellawaya,Kataragama,Buttala,Bibile">Moneragala</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Matara,Akuressa,Weligama,Hakmana,Dikwella">Matara</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Mullativu">Mullativu</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Nuwara Eliya,Hatton,Ginigathena,Madulla">Nuwara Eliya</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Polonnaruwa,Kaduruwela,Hingurakgoda,Medirigriya">Polonnaruwa</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Chilaw,wennappuwa,Puttalama,Dankotuwa,Nattandiya">Puttalama</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Rathnapura,Embilipitya,Balangoda,Pelmadulla,Eheliyagoda">Rathnapura</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Trincomalee,Kinniya">Trincomalee</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="ui relaxed divided list" id="select-sub-divition">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!--End Location Model -->
+
+
+        <!-- Category Model -->
+        <div class="ui modal" id="category-modal">
+            <i class="close icon"></i>
+            <div class="header">
+                Select a Category Or Sub Category
+            </div>
+            <div class="scrolling content">
+
+                <div class="ui segment">
+                    <div class="ui dividing medium header">
+                        Select Category
+                    </div>
+                    <div class="ui two column grid">
+                        <div class="column">
+                            <div class="ui relaxed divided list select-category">
+                                <div class="item" >
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content" data-bind="A">
+                                        <a class="header" data-bind="A_Air_Conditions&Electrical_Fittings,A_Audio&Mp3">
+                                            Electronic</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Cars,Moterbicikes & Scooters,Three wheelers,Push Cycles,Van / Buses an Lorries,Heary Machinery an Tracktors,Auto Service,Auto Parts an Accessories,Bouts an Water Transport">
+                                            Cars & Vehicle</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Land,Houses,Apartments,New Deverlopments,Commercial Property">
+                                            Property</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content" >
+                                        <a class="header" data-bind="Bag an Beauty,Bag an Luggage,Clothing,Shoes an footwear,Jewallery,Sunglasses an Opticians,Health an Beauty Products,Other Personal item">
+                                            Fashion Health an Beauty</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content" >
+                                        <a class="header" data-bind="Furniture,Bathroom & Sanitury ware,Building Material & tools,Garden,Home Decor,Kitchen items,Other Home items">
+                                            House & Garden</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Pets,Pet Food,Veterinary Services,Farm Animals,Animal Accessories,Other Animals">
+                                            Animals</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Muscial Instruments,Sport Equipment,Sports Supplements,Travel  Events & Tickets, Art an Collecibles,Musics  Book an Movies,Children's Items,Other Hobby  Sport an Kids items">
+                                            Hobby ,Sport an Kids</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Food ,Crops / Seeds an Plants,Farming Tools an Machinery,Other Food an Agriculture">
+                                            Food an Agriculture</a>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <i class="large github middle aligned icon"></i>
+                                    <div class="content">
+                                        <a class="header" data-bind="Office Equipment /Supplies an Stationery,Solar & Genarators,Industry Tools an Machinery,Raw Materials an Wholesale Lots,Licences an Titles,Health Care /Medical Equipment an Supplies,Other Business Servies">
+                                            Business an Industry</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="ui relaxed divided list" id="select-sub-category">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- End Category Model -->
+        <script src="../_js/jquery-3.3.1.min.js"></script>
+        <script src="../_js/semantic.js"></script>
+        <script src="../_js/popup.js"></script>
+        <script type="text/javascript">
+                                    function temp() {
+                                        $("#my-popup").popup();
+                                    }
+
+                                    //Loction Model
+                                    function viewLocation() {
+                                        $("#location-modal").modal('show');
+                                    }
+                                    //Category Model
+                                    function viewCategory() {
+                                        $("#category-modal").modal('show');
+                                    }
+
+                                    // Location model Loader
+                                    var x = 0;
+                                    $(".select-divition").children("div").click(function () {
+                                        var data = $(this).find("a").attr("data-bind").split(",");
+                                        var mainHtml = "";
+                                        for (var i = 0; i < data.length; i++) {
+                                            var myHtml = "<div class=\"item\"><i class=\"large github middle aligned icon\"></i><div class=\"content\"><a class=\"header\">\n\
+                        " + data[i] + "</a></div></div>";
+                                            mainHtml = mainHtml + myHtml;
+
+                                        }
+                                        $("#select-sub-divition").html(mainHtml);
+
+                                        //****divition Liner***
+                                        $(".select-divition div.item").each(function (index, element) {
+                                            var x = $(element).children("div").children("a").attr("data-bind");
+                                            if (x == data) {
+                                                $(element).css("background-color", "#e6e6e6");
+                                                $(element).css("opacity", "0.5");
+                                            } else {
+                                                $(element).css("background-color", "white");
+                                                $(element).css("opacity", "1");
+                                            }
+                                        });
+                                        //******end diviton Liner****
+
+
+                                    });
+                                    //Endd Location Model loader
+
+
+
+                                    //Category Model Loader
+                                    var x = 0;
+                                    $(".select-category").children("div").click(function () {
+
+                                        var data = $(this).find("a").attr("data-bind").split(",");
+                                        var mainHtmtl = "";
+                                        for (var i = 0; i < data.length; i++) {
+
+                                            var myHtml = "<div class=\"item\"><i class=\"large github middle aligned icon\"></i><div class=\"content\"><a href='ads.html' onClick=\"nextPage()\" class=\"header\">\n\
+                       " + data[i] + "</a></div></div>";
+                                            mainHtmtl = mainHtmtl + myHtml;
+
+                                        }
+                                        $("#select-sub-category").html(mainHtmtl);
+
+                                        //***Category Liner*****
+
+                                        $(".select-category div.item").each(function (index, element) {
+                                            var x = $(element).children("div").children("a").attr("data-bind");
+                                            if (x == data) {
+                                                $(element).css("background-color", "#e6e6e6");
+                                                $(element).css("opacity", "0.5");
+                                            } else {
+                                                $(element).css("background-color", "white");
+                                                $(element).css("opacity", "1");
+                                            }
+                                        });
+                                        //*****End  Divition Liner
+
+
+                                    });
+                                    //End Category Model
+
+
+                                    $('#drop').dropdown();
+                                    $('#drop-me').dropdown();
+
+
+
+
+        </script>
+    </body>
+</html>

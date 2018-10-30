@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="_css/semantic.css">
+        <link rel='stylesheet prefetch'
+              href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+        <link rel="stylesheet" href="_css/StyleSheet.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="relative/path/to/your/javascript.js"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
+              type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+        <style>
+            /*            @media screen and (max-width:780px){
+                            .main{
+                                margin-top: 500px;
+                            }
+                        }*/
+        </style>
+    </head>
+    <body style="background-color: #E5E5E5">
+        <!--Start Navigation Bar-->
+        <!--Start Navigation Bar-->
+        <div class="ui stackable  container menu" style="background-color: #0d71bb ; width: 100%;">
+            <div class="item">
+                <img src="_img/dealing-invers.png" style="width: 150px;">
+            </div>
+            <a class="item"  style="color: white ">Home</a>
+            <a class="item"  style="color: white ">All Adz</a>
+            <a class="item"  style="color: white ">Bid Now</a>
+            <a class="item"  style="color: white ">Post Ad</a>
+            <div class="right menu ite" style="color: white ">
+                <div class="ui dropdown item" style="color: white ">
+                    Language <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item">English</a>
+                        <a class="item">සිංහල</a>
+                        <a class="item">Tamil</a>
+                    </div>
+                </div>
+                <a class="item" href="signin.html" style="color: white ">
+                    Login
+                </a>
+            </div>
+        </div>
+        
+        <!--End Navigation Bar-->
+        <div class="main">
+            <div class="ui centered grid container">
+                <div class="right menu grid container" style="background-color: #0d71bb ; height: 60px; margin-top: 10px; width: 100%">
+                    <div class="right menu" style=" height: 60px;">
+                        <div class="ui ten wide column input" >
+                            <input class="input" type="text" placeholder="Search anything do you want?" size="50" >
+                        </div>
+                        <div class="ui selection dropdown" id="uiDropdown">
+                            <input type="hidden" name="category">
+                            <i class="dropdown icon"></i>
+                            <div class="default text" style="font-size: 13.5px;">All Category</div>
+                            <div class="menu">
+                                <div class="item" style="font-size: 12px;" data-value="1">Antiques</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Art</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Baby</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Books</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Business & Industrial</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Cameras & Photo</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Cell Phones & Accessories</div>
+                                <div class="item" style="font-size: 12px;" data-value="1">Clothing, Shoes & Accessories</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Coins & Paper Money</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Collectibles</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Computers/Tablets & Networking</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Consumer Electronics</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Crafts</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Dolls & Bears</div>
+                                <div class="item" style="font-size: 12px;" data-value="1">DVDs & Movies</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">eBay Motors</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Entertainment Memorabilia</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Gift Cards & Coupons</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Health & Beauty</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Home & Garden</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Jewelry & Watches</div>
+                                <div class="item" style="font-size: 12px;" data-value="1">Music</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Musical Instruments & Gear</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Pet Supplies</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Pottery & Glass</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Real Estate</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Specialty Services</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Sporting Goods</div>
+                                <div class="item" style="font-size: 12px;" data-value="1">Sports Mem, Cards & Fan Shop</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Stamps</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Tickets & Experiences</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Toys & Hobbies</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Travel</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Video Games & Consoles</div>
+                                <div class="item" style="font-size: 12px;" data-value="0">Everything Else</div>
+                            </div>
+                        </div>
+                        <button class="ui button" id="findButton">Search</button>
+                    </div>
+                </div>
+                <!--End search form-->
+                <div class="ui container segment" style="margin-top: 15px">
+                    <div class="ui centered grid">
+                        <div class="ui eight wide column">
+                            <div class="column">
+                                <img class="ui large centered image" src="_img/5s1.jpg">
+                                <br>
+                                <div class="column">
+                                    <h5 class="ui top attached header" style="background-color: #f7f7f7;">
+                                        <strong>Apple iPhone 4S Mobile Phone 8GB 16GB 32GB Sim Free Factory Unlocked
+                                            Smartphone</strong>
+                                    </h5>
+                                    <div class="ui attached segment">
+                                        <div class="ui grid">
+                                            <div class="eight wide column">
+                                                <p>Item Price: 50,000.00 | Qty: 2</p>
+                                            </div>
+                                            <div class="eight wide column">
+                                                <p>Total Amount: Rs. 100,000.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui attached segment" style="background-color: #f7f7f7;">
+                                        <div style="text-align: center;">
+                                            <button class="ui inverted primary big button">
+                                                Confirm Payment
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="ui attached segment" style="background-color: #f7f7f7;">
+                                        <table class="ui definition table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="two wide column">Delivery</td>
+                                                    <td> Varies | Includes international tracking</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Payments</td>
+                                                    <td>
+                                                        <img src="_img/payment%20icons/visa.png" style="width: 30px; height: 30px;">&nbsp;&nbsp;
+                                                        <img src="_img/payment%20icons/mastercard.png"
+                                                             style="width: 30px; height: 30px;">&nbsp;&nbsp;
+                                                        <img src="_img/payment%20icons/paypal.png"
+                                                             style="width: 30px; height: 30px;">&nbsp;&nbsp;
+                                                        <img src="_img/payment%20icons/cash.png" style="width: 30px; height: 30px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Returns</td>
+                                                    <td>Seller does not accept returns</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Guarantee</td>
+                                                    <td><i class="money icon"></i> Money Back Guarantee
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui ten wide column computer tablet only">
+                            <h4 class="ui dividing header" style="padding-top: 20px;">Billing Information</h4>
+                            <div class="ui two column very relaxed grid">
+                                <div class="column">
+                                    <p>Delivery address</p>
+                                    <p>No. 35D, Old Kottawa Road, Mirihana, Nugegoda, Sri Lanka. ZIP: 10100</p>
+                                </div>
+                                <div class="column">
+                                    <p></p>
+                                    <a href="users/client/settings.html" class="ui button">
+                                        Change Address
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="ui dividing header">Select your payment methord</h4>
+                            <div class="ui  styled accordion">
+                                <div class="title" id="accordig-bank">
+                                    <input type="radio" name="select_payment" value="bank">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        src="_img/payment%20icons/local-bank5.png.jpg"></input>
+                                </div>
+                                <div class="eight wide column content">
+                                    <label><strong>Bank Deposit</strong></lable>
+                                        <table class="ui definition three wide column table" style="font-size: 11px;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Bank</th>
+                                                    <th>Account Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sampath bank</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BOC</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Peoples Bank</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HNB</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Commercial Bank</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nation trust Bank</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div class="title " id="accordig-ondelivery">
+                                    <input type="radio" name="select_payment" value="ondelivery">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 30px; height: 30px;" src="_img/payment%20icons/cash.png">&nbsp;&nbsp;&nbsp;&nbsp;Cash
+                                    on Delivery</input>
+                                </div>
+                                <div class="three column wide content">
+                                    <div class="ui segment">
+                                        <div class="ui three column very relaxed tiny grid">
+                                            <div class="column">
+                                                <p>Delivery address</p>
+                                                <p>No. 35D, Old Kottawa Road, Mirihana, Nugegoda, Sri Lanka. ZIP: 10100</p>
+                                            </div>
+                                            <div class="column">
+                                                <p></p>
+                                                <a class="ui button">
+                                                    Change Address
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="ui vertical divider">
+                                            or
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title" id="accordig-visa">
+                                    <input type="radio" name="select_payment" value="visa">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 50px;" src="_img/payment%20icons/visa.png">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 50px;" src="_img/payment%20icons/mastercard.png">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 25px;"
+                                        src="_img/payment%20icons/american-express-logo-wallpaper.jpg"></input>
+                                </div>
+                                <div class="content">
+                                    <form class="ui form" style="font-size: 13px;">
+                                        <h4 class="ui dividing header">Shipping Information</h4>
+                                        <div class="field">
+                                            <label>Name</label>
+                                            <div class="two fields">
+                                                <div class="field">
+                                                    <input name="shipping[first-name]" placeholder="First Name" type="text">
+                                                </div>
+                                                <div class="field">
+                                                    <input name="shipping[last-name]" placeholder="Last Name" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="ui dividing header">Card Information</h4>
+                                        <div class="field">
+                                            <label>Card Type</label>
+                                            <div class="ui selection dropdown">
+                                                <input name="card[type]" type="hidden">
+                                                <div class="default text">Type</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item" data-value="visa">
+                                                        <i class="visa icon"></i>
+                                                        Visa
+                                                    </div>
+                                                    <div class="item" data-value="amex">
+                                                        <i class="amex icon"></i>
+                                                        American Express
+                                                    </div>
+                                                    <div class="item" data-value="discover">
+                                                        <i class="mastercard icon"></i>
+                                                        Master card
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fields">
+                                            <div class="seven wide field">
+                                                <label>Card Number</label>
+                                                <input name="card[number]" maxlength="16" placeholder="Card #" type="text">
+                                            </div>
+                                            <div class="three wide field">
+                                                <label>CVC</label>
+                                                <input name="card[cvc]" maxlength="3" placeholder="CVC" type="text">
+                                            </div>
+                                            <div class="six wide field">
+                                                <label>Expiration</label>
+                                                <div class="two fields">
+                                                    <div class="field">
+                                                        <select class="ui fluid search dropdown" name="card[expire-month]">
+                                                            <option value="">Month</option>
+                                                            <option value="1">January</option>
+                                                            <option value="2">February</option>
+                                                            <option value="3">March</option>
+                                                            <option value="4">April</option>
+                                                            <option value="5">May</option>
+                                                            <option value="6">June</option>
+                                                            <option value="7">July</option>
+                                                            <option value="8">August</option>
+                                                            <option value="9">September</option>
+                                                            <option value="10">October</option>
+                                                            <option value="11">November</option>
+                                                            <option value="12">December</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="field">
+                                                        <input name="card[expire-year]" maxlength="4" placeholder="Year"
+                                                               type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ui button" tabindex="0">Submit Order</a>
+                                        <a class="ui button" tabindex="1">Cancel</a>
+                                    </form>
+                                </div>
+                                <div class="title " id="accordig-paypal">
+                                    <input type="radio" name="select_payment" value="paypal">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 50px;" src="_img/payment%20icons/paypal.png">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 50px;"
+                                        src="_img/payment%20icons/skrill-logo-gradient.svg"></input>
+                                </div>
+                                <div class="content">
+                                    <a class="ui blue basic button" tabindex="0"><i class="money icon"></i>Login | Paypal</a>
+                                    <a class="ui violet basic button" tabindex="1"><i class="money icon"></i>Login | Skrill</a>
+                                </div>
+                                <div class="title " id="accordig-Mobile">
+                                    <input type="radio" name="select_payment" value="mobile">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 30px;" src="_img/payment%20icons/z_p31-mCash.png">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 45px; height: 40px;" src="_img/payment%20icons/ez-cash.png"></input>
+                                </div>
+                                <div class="content">
+                                    <a class="ui green basic button" tabindex="0"><i class="money icon"></i>Pay Mcash</a>
+                                    <a class="ui blue basic button" tabindex="1"><i class="money icon"></i>Pay Ezcash</a>
+                                </div>
+                            </div>
+                            <h6 class="ui horizontal divider header">
+                                <div style="text-align: center;">
+                                    <a class="ui inverted primary small button">
+                                        Confirm your order
+                                    </a>
+                                    <a class="ui basic small button">
+                                        Back to description
+                                    </a>
+                                </div>
+                            </h6>
+
+                        </div>
+
+
+
+                        <div class="ui five wide column mobile only">
+                            <h4 class="ui dividing header" style="padding-top: 20px;">Billing Information</h4>
+                            <div class="ui one column very relaxed grid">
+                                <div class="column">
+                                    <p>Delivery address</p>
+                                    <p>No. 35D, Old Kottawa Road, Mirihana, Nugegoda, Sri Lanka. ZIP: 10100</p>
+                                </div>
+                                <div class="column">
+                                    <p></p>
+                                    <a href="users/client/settings.html" class="ui button">
+                                        Change Address
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="ui dividing header">Select your payment method</h4>
+                            <div class="ui five column wide styled accordion">
+                                <div class="title" id="accordig-bank">
+                                    <input type="radio" name="select_payment" value="bank" >&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        src="_img/payment%20icons/local-bank5.png.jpg"  style="width: 30px; height: 30px;"></input>
+                                </div>
+                                <div class="ui five column wide content">
+                                    <label><strong>Bank Deposit</strong></lable>
+                                        <table class="ui definition table" style="font-size: 11px;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Bank</th>
+                                                    <th>Account Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sampath bank</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BOC</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Peoples Bank</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HNB</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Commercial Bank</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nation trust Bank</td>
+                                                    <td>123-456-789789-789 | Dealing.lk (Pvt) Ltd.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div class="title " id="accordig-ondelivery">
+                                    <input type="radio" name="select_payment" value="ondelivery">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 30px; height: 30px;" src="_img/payment%20icons/cash.png">&nbsp;&nbsp;&nbsp;&nbsp;Cash
+                                    on Delivery</input>
+                                </div>
+                                <div class="five column wide content">
+                                    <div class="ui centered segment" style="margin-left: -8px" >
+                                        <div class="ui two column very relaxed grid" style="margin-left: -17px">
+                                            <div class="column">
+                                                <p>Delivery address</p>
+                                                <p>No. 35D, Old Kottawa Road, Mirihana, Nugegoda, Sri Lanka. ZIP: 10100</p>
+                                            </div>
+
+                                            <div class="column">
+                                                <p></p>
+                                                <a class="ui left aligned tiny button" style="margin-left: -14px">
+                                                    Change Address
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="ui vertical divider">
+                                            or
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title" id="accordig-visa">
+                                    <input type="radio" name="select_payment" value="visa">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 50px;" src="_img/payment%20icons/visa.png">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 50px;" src="_img/payment%20icons/mastercard.png">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 25px;"
+                                        src="_img/payment%20icons/american-express-logo-wallpaper.jpg"></input>
+                                </div>
+                                <div class="content">
+                                    <form class="ui form" style="font-size: 13px;">
+                                        <h4 class="ui dividing header">Shipping Information</h4>
+                                        <div class="field">
+                                            <label>Name</label>
+                                            <div class="two fields">
+                                                <div class="field">
+                                                    <input name="shipping[first-name]" placeholder="First Name" type="text">
+                                                </div>
+                                                <div class="field">
+                                                    <input name="shipping[last-name]" placeholder="Last Name" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="ui dividing header">Card Information</h4>
+
+                                        <div class="seven wide field">
+                                            <label >Card Type</label>
+                                            <div class="three wide field">
+                                                <div class="ui seven wide fluid selection  dropdown" >
+                                                    <input name="card[type]" type="hidden" >
+                                                    <div class="default text">Type</div>
+                                                    <i class="dropdown icon"></i>
+                                                    <div class=" menu">
+                                                        <div class="item" data-value="visa">
+                                                            <i class="visa icon"></i>
+                                                            Visa
+                                                        </div>
+                                                        <div class="item" data-value="amex">
+                                                            <i class="amex icon"></i>
+                                                            American Express
+                                                        </div>
+                                                        <div class="item" data-value="discover">
+                                                            <i class="mastercard icon"></i>
+                                                            Master card
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="fields">
+                                            <div class="seven wide field">
+                                                <label>Card Number</label>
+                                                <input name="card[number]" maxlength="16" placeholder="Card #" type="text">
+                                            </div>
+                                            <div class="three wide field">
+                                                <label>CVC</label>
+                                                <input name="card[cvc]" maxlength="3" placeholder="CVC" type="text">
+                                            </div>
+                                            <div class="six wide field">
+                                                <label>Expiration</label>
+                                                <div class="two fields">
+                                                    <div class="field">
+                                                        <select class="ui fluid search dropdown" name="card[expire-month]">
+                                                            <option value="">Month</option>
+                                                            <option value="1">January</option>
+                                                            <option value="2">February</option>
+                                                            <option value="3">March</option>
+                                                            <option value="4">April</option>
+                                                            <option value="5">May</option>
+                                                            <option value="6">June</option>
+                                                            <option value="7">July</option>
+                                                            <option value="8">August</option>
+                                                            <option value="9">September</option>
+                                                            <option value="10">October</option>
+                                                            <option value="11">November</option>
+                                                            <option value="12">December</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="field">
+                                                        <input name="card[expire-year]" maxlength="4" placeholder="Year"
+                                                               type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ui tiny button" tabindex="0">Submit Order</a>
+                                        <a class="ui tiny button" tabindex="1">Cancel</a>
+                                    </form>
+                                </div>
+                                <div class="title " id="accordig-paypal">
+                                    <input type="radio" name="select_payment" value="paypal">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 50px;" src="_img/payment%20icons/paypal.png">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 50px;"
+                                        src="_img/payment%20icons/skrill-logo-gradient.svg"></input>
+                                </div>
+                                <div class="content">
+                                    <a class="ui blue basic tiny button" tabindex="0"><i class="money icon"></i>Login | Paypal</a>
+                                    <a class="ui violet basic tiny button" tabindex="1"><i class="money icon"></i>Login | Skrill</a>
+                                </div>
+                                <div class="title " id="accordig-Mobile">
+                                    <input type="radio" name="select_payment" value="mobile">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 50px; height: 30px;" src="_img/payment%20icons/z_p31-mCash.png">&nbsp;&nbsp;&nbsp;&nbsp;<img
+                                        style="width: 45px; height: 40px;" src="_img/payment%20icons/ez-cash.png"></input>
+                                </div>
+                                <div class="content">
+                                    <a class="ui green basic tiny button" tabindex="0"><i class="money icon"></i>Pay Mcash</a>
+                                    <a class="ui blue basic tiny button" tabindex="1"><i class="money icon"></i>Pay Ezcash</a>
+                                </div>
+                            </div>
+                            <a class="ui tiny primary button" tabindex="0">Confirm Your Order</a>
+                            <a class="ui tiny button" tabindex="1">Back to description</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="sixteen wide column ">
+            <div class="ui vertical footer segment"
+                 style="width: 100%;border-top: #0d71bb 3px solid; background-color: #ffffff">
+                <div class="ui center aligned container">
+                    <div class="ui stackable  divided grid ">
+                        <div class="three wide column">
+                            <h4 class="ui header" style="font-family: sans-serif">Group 1</h4>
+                            <div class="ui link list">
+                                <a href="#" class="item">Site Map</a>
+                                <a href="#" class="item">Link Two</a>
+                                <a href="#" class="item">Link Three</a>
+                                <a href="#" class="item">Link Four</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui header" style="font-family: sans-serif">Group 2</h4>
+                            <div class="ui link list">
+
+                                <a href="temp_rec/ContactUs.html" class="item">Contact Us</a>
+                                <a href="#" class="item">Link Three</a>
+                                <a href="#" class="item">Link Four</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui header" style="font-family: sans-serif">Group 3</h4>
+                            <div class="ui link list">
+                                <a href="#" class="item">Terms and Conditions</a>
+                                <a href="#" class="item">Link Two</a>
+                                <a href="#" class="item">Link Three</a>
+                                <a href="#" class="item">Link Four</a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <img src="_img/newlogo.png" class="ui centered small image">
+                            <h4 class="ui header">Dealing (pvt) ltd.</h4>
+                            <p>Bid and Sell what you want.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of footer-->
+        <script src="_js/jquery-3.3.1.min.js"></script>
+        <script src="_js/semantic.js"></script>
+        <script src="_js/popup.js"></script>
+        <script type="text/javascript">
+            $('.ui.accordion').accordion();
+            $('select.dropdown')
+                    .dropdown()
+                    ;
+        </script>
+    </body>
+</html>

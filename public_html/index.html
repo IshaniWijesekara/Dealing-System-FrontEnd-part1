@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dealing.lk</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="_css/semantic.css">
+        <link rel='stylesheet prefetch'
+              href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+        <link rel='stylesheet prefetch'
+              href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/flag.min.css'>
+        <link rel="stylesheet" href="_css/StyleSheet.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href='https://fonts.googleapis.com/css?family=Carme' rel='stylesheet'>
+        
+       
+
+    </head>
+    <body>
+        <!--Start Navigation Bar-->
+        <!--        <div class="ui segment" style="background-color: #0d71bb;">
+                    <div class="ui inverted secondary menu" style="margin-bottom: -25px; margin-top: -25px;">
+                        <div class="item">
+                            <img src="_img/dealing-invers.png" style="width: 150px;">
+                        </div>
+                        <a class="item active" href="index.html">
+                            Home
+                        </a>
+                        <a class="item" href="ads.html">
+                            All Adz
+                        </a>
+                        <a class="item" href="bidads.html">
+                            Bid Now
+                        </a>
+                        <a class="item" href="signin.html">
+                            Post Ad
+                        </a>
+                        <div class="right menu">
+                            <div class="ui dropdown item">
+                                Language <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <a class="item">English</a>
+                                    <a class="item">සිංහල</a>
+                                    <a class="item">Tamil</a>
+                                </div>
+                            </div>
+                            <a class="item" href="signin.html">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>-->
+
+      <div class="ui container grid">
+        <div class="computer only row">
+          <a class="header item">Project Name</a><a class="active item">Home</a><a class="item">About</a><a class="item">Contact</a><a class="ui dropdown item">Dropdown<i class="dropdown icon"></i>
+            <div class="menu">
+              <div class="item">
+                Action
+              </div>
+              <div class="item">
+                Another action
+              </div>
+              <div class="item">
+                Something else here
+              </div>
+              <div class="ui divider"></div>
+              <div class="header">
+                Navbar header
+              </div>
+              <div class="item">
+                Seperated link
+              </div>
+              <div class="item">
+                One more seperated link
+              </div>
+            </div>
+          </a>
+          <div class="right menu">
+            <a class="item" href="/templates/bootstrap/navbar/">Default</a><a class="item" href="/templates/bootstrap/navbar-static-top/">Static top</a><a class="active item" href="#">Fixed top</a>
+          </div>
+        </div>
+        <div class="tablet mobile only row">
+          <a class="header item"> Project Name</a>
+          <div class="right menu">
+            <a class="menu item">
+              <div class="ui basic icon toggle button">
+                <i class="content icon"></i>
+              </div>
+            </a>
+          </div>
+          <div class="ui vertical accordion borderless fluid menu">
+            <a class="active item"> Home</a><a class="item"> About</a><a class="item"> Contact</a>
+            <div class="item">
+              <div class="title">
+                Dropdown<i class="dropdown icon"></i>
+              </div>
+              <div class="content">
+                <div class="item">
+                  Action
+                </div>
+                <div class="item">
+                  Another action
+                </div>
+                <div class="item">
+                  Something else here
+                </div>
+                <div class="ui divider"></div>
+                <div class="header item">
+                  Navbar header
+                </div>
+                <div class="item">
+                  Seperated link
+                </div>
+                <div class="item">
+                  One more seperated link
+                </div>
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <a class="item" href="/templates/bootstrap/navbar/">Default</a><a class="item" href="/templates/bootstrap/navbar-static-top/">Static top</a><a class="active item" href="#">Fixed top</a>
+          </div>
+        </div>
+      </div>
+    
+
+<!--        <div class="three column mobile six column tablet twelve column computer" style="background-color: #0d71bb;">                                                                 >
+            
+        </div>-->
+
+        <!--End Navigation Bar-->
+        <!--Start search form-->
+        <div class="ui centered grid">
+            <div class="ui section divider"></div>
+
+            <div class="ui equal width grid" style="margin-top: 10px" >
+                <div class="right menu" style=" height: 60px;">
+                    <div class="ui twelve wide column input" >
+                        <input class="input" type="text" placeholder="Search anything do you want?">
+                    </div>
+                    <div class="ui selection dropdown" id="uiDropdown">
+                        <input type="hidden" name="category" class="ui four wide input">
+                        <i class="dropdown icon"></i>
+                        <div class="default text" style="font-size: 13.5px;">All Category</div>
+                        <div class="menu">
+                            <div class="item" style="font-size: 12px;" data-value="1">Antiques</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Art</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Baby</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Books</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Business & Industrial</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Cameras & Photo</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Cell Phones & Accessories</div>
+                            <div class="item" style="font-size: 12px;" data-value="1">Clothing, Shoes & Accessories</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Coins & Paper Money</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Collectibles</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Computers/Tablets & Networking</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Consumer Electronics</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Crafts</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Dolls & Bears</div>
+                            <div class="item" style="font-size: 12px;" data-value="1">DVDs & Movies</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">eBay Motors</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Entertainment Memorabilia</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Gift Cards & Coupons</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Health & Beauty</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Home & Garden</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Jewelry & Watches</div>
+                            <div class="item" style="font-size: 12px;" data-value="1">Music</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Musical Instruments & Gear</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Pet Supplies</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Pottery & Glass</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Real Estate</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Specialty Services</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Sporting Goods</div>
+                            <div class="item" style="font-size: 12px;" data-value="1">Sports Mem, Cards & Fan Shop</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Stamps</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Tickets & Experiences</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Toys & Hobbies</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Travel</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Video Games & Consoles</div>
+                            <div class="item" style="font-size: 12px;" data-value="0">Everything Else</div>
+                        </div>
+                    </div>
+                    <button class="ui blue basic button" id="findButton">Search</button>
+                </div>
+            </div>
+            <br>
+            <div class="ui section divider"></div>
+            <!--End search form-->
+            <!--Start category-->
+
+
+            <div class="row  twelve column menu computer only" style="margin-top: 5px; margin-bottom: 20px ;background-color: white">
+                <div class="column">
+                    <a class="item" href="categories.html">All Category <i class="dropdown icon"></i></a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Electronics</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Fashion</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Health & Beauty</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Motors</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Collectibles</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Sports</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Home & Garden</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="https://hotjob.lk/">Jobs</a>
+                </div>
+            </div>
+
+
+            <div class="row  two column centered mobile only"  style="margin-top: 0px; margin-bottom: 20px ;  ; background-color: white">
+                <div class="column">
+                    <a class="item" href="categories.html">All Category <i class="dropdown icon"></i></a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Electronics</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Fashion</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Health & Beauty</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Motors</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Collectibles</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Sports</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Home & Garden</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="https://hotjob.lk/">Jobs</a>
+                </div>
+            </div>
+
+            <div class="row  three column tablet only"  style="margin-top: 0px; margin-bottom: 20px ;background-color: white">
+                <div class="column">
+                    <a class="item" href="categories.html">All Category <i class="dropdown icon"></i></a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Electronics</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Fashion</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Health & Beauty</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Motors</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Collectibles</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Sports</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="unic_category.html">Home & Garden</a>
+                </div>
+                <div class="column">
+                    <a class="item" href="https://hotjob.lk/">Jobs</a>
+                </div>
+            </div>
+
+
+
+
+
+            <!--End category-->
+            <!--Start header area-->
+            <div class="ui centered grid">
+                <div class="ui vertical header segment"
+                     style="width: 100%; border-bottom: #0d71bb 3px solid; background-color: #ffffff; padding-top: 0px;">
+                    <div class="ui horizontal segments">
+                        <div class="ui segment">
+                            <a href="#">
+                                <img class="ui centered mini image" src="_img/electronic.png">
+                                <p>Live Auction | Bid & Buy</p>
+                            </a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#">
+                                <img class="ui centered mini image" src="_img/electronic.png">
+                                <p>Post your adz | sell something</p>
+                            </a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#">
+                                <img class="ui centered mini image" src="_img/electronic.png">
+                                <p>Sign In | Buy Something</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                <!--End header area-->
+                <!--</div>-->
+                <div class="ui container segment" style="height: 68px">
+                    <div class="row" >
+                        <div class="ui equal width grid">
+                            <div class="computer only row" style="margin-top: -10px">
+                                <div class="column">
+                                    <div class="ui segment">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="eight wide column">
+                                    <div class="ui segment">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="ui segment">
+                                        3
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ui equal width grid">
+                            <div class="mobile only row">
+                                <div class="column">
+                                    <div class="ui segment">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="six wide column">
+                                    <div class="ui segment">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="ui segment">
+                                        3
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ui equal width grid">
+                            <div class="tablet only row">
+                                <div class="column">
+                                    <div class="ui segment">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="six wide column">
+                                    <div class="ui segment">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="ui segment">
+                                        3
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ui container segment">
+                    <div class="row">
+                        <div class="ui four column centered  grid">
+                            <div class="computer only row">
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/electronic.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Electronic</a>
+                                    </div>
+                                    <p class="phara">
+                                        Find great deals for used electronics in Sri Lanka including mobile
+                                        phones, computers, laptops, TVs, home theatres and much more.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/car.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Car & Vehicle</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/education.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Education</a></div>
+                                    <p class="phara">
+                                        Buy and sell books and magazines, find tuition, classes and other educational
+                                        resources in Sri Lanka xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/beauty.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Fashion,Beauty &
+                                            Health</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mobile only row">
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/electronic.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Electronic</a>
+                                    </div>
+                                    <p class="phara">
+                                        Find great deals for used electronics in Sri Lanka including mobile
+                                        phones, computers, laptops, TVs, home theatres and much more.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/car.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Car & Vehicle</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/education.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Education</a></div>
+                                    <p class="phara">
+                                        Buy and sell books and magazines, find tuition, classes and other educational
+                                        resources in Sri Lanka xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/beauty.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Fashion,Beauty &
+                                            Health</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/jobs.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Job Vacancies</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/dog.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Animals</a></div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/Property.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Property</a></div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/sport.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Hobby & Sports</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/service.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Event &
+                                            Services</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/home & garden.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Home & Garden</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/industry.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Business &
+                                            Industry </a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/industry.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Work Overseas</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/industry.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Food &
+                                            Agriculture</a>
+                                    </div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+
+                                <div class="four wide column">
+                                    <img class="ui centered mini image" src="_img/other.png">
+                                    <div class="ui centered small header"><a href="ads.html" class="font_re">Other</a></div>
+                                    <p class="phara">
+                                        Buy and sell used cars, motorbikes and other vehicles in Sri Lanka.
+                                        Choose from top brands including Toyota, Nissan, Honda and Suzuki.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+
+            </div>
+
+            <!--footer-->
+            <div class="sixteen wide column">
+                <div class="ui vertical footer segment"
+                     style="width: 100%;border-top: #0d71bb 3px solid; background-color: #ffffff">
+                    <div class="ui center aligned container">
+                        <div class="ui stackable  divided grid">
+                            <div class="three wide column">
+                                <h4 class="ui header" style="font-family: sans-serif">Group 1</h4>
+                                <div class="ui link list">
+                                    <a href="#" class="item">Site Map</a>
+                                    <a href="#" class="item">Link Two</a>
+                                    <a href="#" class="item">Link Three</a>
+                                    <a href="#" class="item">Link Four</a>
+                                </div>
+                            </div>
+                            <div class="three wide column">
+                                <h4 class="ui header" style="font-family: sans-serif">Group 2</h4>
+                                <div class="ui link list">
+
+                                    <a href="temp_rec/ContactUs.html" class="item">Contact Us</a>
+                                    <a href="#" class="item">Link Three</a>
+                                    <a href="#" class="item">Link Four</a>
+                                </div>
+                            </div>
+                            <div class="three wide column">
+                                <h4 class="ui header" style="font-family: sans-serif">Group 3</h4>
+                                <div class="ui link list">
+                                    <a href="#" class="item">Terms and Conditions</a>
+                                    <a href="#" class="item">Link Two</a>
+                                    <a href="#" class="item">Link Three</a>
+                                    <a href="#" class="item">Link Four</a>
+                                </div>
+                            </div>
+                            <div class="seven wide column">
+                                <img src="_img/newlogo.png" class="ui centered small image">
+                                <h4 class="ui header">Dealing (pvt) ltd.</h4>
+                                <p>Bid and Sell what you want.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of footer-->
+        <script src="_js/jquery-3.3.1.min.js"></script>
+        <script src="_js/semantic.js"></script>
+        <script src="_js/popup.js"></script>
+        <script type="text/javascript">
+
+        </script>
+    </body>
+</html>

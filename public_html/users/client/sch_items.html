@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../_css/semantic.css">
+    <link rel='stylesheet prefetch'
+          href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+    <link rel="stylesheet" href="../../_css/StyleSheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* visited link */
+        a:visited {
+            color: Black;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #0d71bb;
+        }
+    </style>
+</head>
+<body style="background-color: #E5E5E5">
+<!--Start Navigation Bar-->
+<div class="ui segment" style="background-color: #0d71bb;">
+    <div class="ui inverted secondary menu" style="margin-bottom: -25px; margin-top: -25px;">
+        <div class="item">
+            <img src="../../_img/dealing-invers.png" style="width: 150px;">
+        </div>
+        <a class="item active" href="../../index.html">
+            Home
+        </a>
+        <a class="item" href="../../ads.html">
+            All Adz
+        </a>
+        <a class="item" href="../../bidads.html">
+            Bid Now
+        </a>
+        <a class="item" href="../../post_adz.html">
+            Post Ad
+        </a>
+        <div class="right menu">
+            <div class="ui dropdown item">
+                Language <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item">English</a>
+                    <a class="item">සිංහල</a>
+                    <a class="item">Tamil</a>
+                </div>
+            </div>
+            <a class="item" href="../../signin.html">
+                Login
+            </a>
+        </div>
+    </div>
+</div>
+<!--End Navigation Bar-->
+<div class="ui centered grid">
+    <div class="right menu" style="background-color: #0d71bb ; height: 60px; margin-top: 10px;">
+        <div class="right menu" style=" height: 60px;">
+            <div class="ui input" style="width: 700px;">
+                <input class="input" type="text" placeholder="Search anything do you want?">
+            </div>
+            <div class="ui selection dropdown" id="uiDropdown">
+                <input type="hidden" name="category">
+                <i class="dropdown icon"></i>
+                <div class="default text" style="font-size: 13.5px;">All Category</div>
+                <div class="menu">
+                    <div class="item" style="font-size: 12px;" data-value="1">Antiques</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Art</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Baby</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Books</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Business & Industrial</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Cameras & Photo</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Cell Phones & Accessories</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">Clothing, Shoes & Accessories</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Coins & Paper Money</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Collectibles</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Computers/Tablets & Networking</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Consumer Electronics</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Crafts</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Dolls & Bears</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">DVDs & Movies</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">eBay Motors</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Entertainment Memorabilia</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Gift Cards & Coupons</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Health & Beauty</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Home & Garden</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Jewelry & Watches</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">Music</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Musical Instruments & Gear</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Pet Supplies</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Pottery & Glass</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Real Estate</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Specialty Services</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Sporting Goods</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">Sports Mem, Cards & Fan Shop</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Stamps</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Tickets & Experiences</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Toys & Hobbies</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Travel</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Video Games & Consoles</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Everything Else</div>
+                </div>
+            </div>
+            <button class="ui button" id="findButton">Search</button>
+        </div>
+    </div>
+</div>
+<br>
+<!--End search form-->
+<div class="ui container segment">
+    <div class="row">
+        <div class="ui ten wide column" style="padding-top: 20px;">
+            <div class="ui pointing menu">
+                <a href="my_deal.html" class="item">
+                    My Deal
+                </a>
+                <a href="message.html" class="item">
+                    Messages (2)
+                </a>
+                <a href="message.html" class="item">
+                    Settings
+                </a>
+                <a href="sell.html" class="item active">
+                    Selling
+                </a>
+                <div class="right menu">
+                    <div class="item">
+                        <div class="ui transparent icon input">
+                            <input placeholder="Search..." type="text">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui segment">
+                <div class="ui grid">
+                    <div class="four wide column">
+                        <div class="ui vertical fluid tabular menu">
+                            <a class="item" href="sell.html">
+                                Dashboard
+                            </a>
+                            <!--<a class="item active" href="sch_items.html">-->
+                            <!--Scheduled Items-->
+                            <!--</a>-->
+                            <a class="item" href="act_items.html">
+                                Active Items
+                            </a>
+                            <a class="item" href="sold_items.html">
+                                Sold Items
+                            </a>
+                            <a class="item" href="unsold_items.html">
+                                Unsold Items
+                            </a>
+                            <!--<a class="item" href="retur_items.html">-->
+                            <!--Returns Items-->
+                            <!--</a>-->
+                            <!--<a class="item" href="dele_items.html">-->
+                            <!--Deleted Items-->
+                            <!--</a>-->
+                        </div>
+                    </div>
+                    <div class="twelve wide stretched column">
+                        <div class="ui segment">
+                            This is an stretched grid column. This segment will always match the tab height
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="sixteen wide column">
+    <div class="ui vertical footer segment"
+         style="width: 100%;border-top: #0d71bb 3px solid; background-color: #ffffff">
+        <div class="ui center aligned container">
+            <div class="ui stackable  divided grid">
+                <div class="three wide column">
+                    <h4 class="ui header" style="font-family: sans-serif">Group 1</h4>
+                    <div class="ui link list">
+                        <a href="#" class="item">Site Map</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui header" style="font-family: sans-serif">Group 2</h4>
+                    <div class="ui link list">
+
+                        <a href="ContactUs.html" class="item">Contact Us</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui header" style="font-family: sans-serif">Group 3</h4>
+                    <div class="ui link list">
+                        <a href="#" class="item">Terms and Conditions</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <img src="../../_img/newlogo.png" class="ui centered small image">
+                    <h4 class="ui header">Dealing (pvt) ltd.</h4>
+                    <p>Bid and Sell what you want.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--end of footer-->
+
+<script src="_js/jquery-3.3.1.min.js"></script>
+<script src="_js/semantic.js"></script>
+<script src="_js/popup.js"></script>
+<script type="text/javascript">
+    $('.ui.accordion').accordion();
+    $('select.dropdown')
+        .dropdown()
+    ;
+</script>
+<script type="text/javascript">
+
+    //Location Model Loarder
+    function viewLocation() {
+        $("#location-modal").modal('show');
+    }
+    //Category Model Loarder
+    function viewCategory() {
+        $("#category-modal").modal('show');
+    }
+
+
+    //Loacation Model sub Diviton Loarder
+
+    var x = 0;
+    $(".select-divition").children("div").click(function () {
+        var data = $(this).find("a").attr("data-bind").split(",");
+        var mainHtml = "";
+        for (var i = 0; i < data.length; i++) {
+            var myHtml = "<div class=\"item\"><i class=\"large github middle aligned icon\"></i><div class=\"content\"><a class=\"header\">\n\
+                        " + data[i] + "</a></div></div>";
+            mainHtml = mainHtml + myHtml;
+        }
+        $("#select-sub-divition").html(mainHtml);
+
+
+        //***********Select Liner for diviton******
+
+        $(".select-divition div.item").each(function (index, element) {
+            var x = $(element).children("div").children("a").attr("data-bind");
+            if (x == data) {
+                $(element).css("background-color", "#e6e6e6");
+                $(element).css("opacity", "0.5");
+            } else {
+                $(element).css("background-color", "white");
+                $(element).css("opacity", "1");
+            }
+        });
+        //*********end Liner*******
+
+
+    });
+    //End  for the sub divition Loarder
+
+
+    //Category Model Sub Category Loarder
+
+    var x = 0;
+    $(".select-category").children("div").click(function () {
+        var data = $(this).find("a").attr("data-bind").split(",");
+        var mainHtml = "";
+        for (var i = 0; i < data.length; i++) {
+            var myHtml = "<div class=\"item\"><i class=\"large github middle aligned icon\"></i><div class=\"content\"><a class=\"header\">\n\
+                        " + data[i] + "</a></div></div>";
+            mainHtml = mainHtml + myHtml;
+        }
+        $("#select-sub-category").html(mainHtml);
+
+        //*******select Liner for Category*******
+
+        $(".select-category div.item").each(function (index, element) {
+            var x = $(element).children("div").children("a").attr("data-bind");
+            if (x == data) {
+                $(element).css("background-color", "#e6e6e6");
+                $(element).css("opacity", "0.5");
+            } else {
+                $(element).css("background-color", "white");
+                $(element).css("opacity", "1");
+            }
+        });
+        //end Liner
+
+    });
+
+</script>
+
+</body>
+</html>

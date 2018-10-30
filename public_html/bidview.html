@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/semantic.css">
+    <link rel='stylesheet prefetch'
+          href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+    <link rel="stylesheet" href="_css/StyleSheet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="relative/path/to/your/javascript.js"></script>
+</head>
+<body style="background-color: #E5E5E5">
+<!--Start Navigation Bar-->
+<div class="ui segment" style="background-color: #0d71bb;">
+    <div class="ui inverted secondary menu" style="margin-bottom: -25px; margin-top: -25px;">
+        <div class="item">
+            <img src="_img/dealing-invers.png" style="width: 150px;">
+        </div>
+        <a class="item" href="index.html">
+            Home
+        </a>
+        <a class="item" href="ads.html">
+            All Adz
+        </a>
+        <a class="item" href="bidads.html">
+            Bid Now
+        </a>
+        <a class="item" href="signin.html">
+            Post Ad
+        </a>
+        <div class="right menu">
+            <div class="ui dropdown item">
+                Language <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item">English</a>
+                    <a class="item">සිංහල</a>
+                    <a class="item">Tamil</a>
+                </div>
+            </div>
+            <a class="item" href="signin.html">
+                Login
+            </a>
+        </div>
+    </div>
+</div>
+<!--End Navigation Bar-->
+<div class="ui centered grid">
+    <div class="right menu" style="background-color: #0d71bb ; height: 60px; margin-top: 10px;">
+        <div class="right menu" style=" height: 60px;">
+            <div class="ui input" style="width: 700px;">
+                <input class="input" type="text" placeholder="Search anything do you want?">
+            </div>
+            <div class="ui selection dropdown" id="uiDropdown">
+                <input type="hidden" name="category">
+                <i class="dropdown icon"></i>
+                <div class="default text" style="font-size: 13.5px;">All Category</div>
+                <div class="menu">
+                    <div class="item" style="font-size: 12px;" data-value="1">Antiques</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Art</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Baby</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Books</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Business & Industrial</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Cameras & Photo</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Cell Phones & Accessories</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">Clothing, Shoes & Accessories</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Coins & Paper Money</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Collectibles</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Computers/Tablets & Networking</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Consumer Electronics</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Crafts</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Dolls & Bears</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">DVDs & Movies</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">eBay Motors</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Entertainment Memorabilia</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Gift Cards & Coupons</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Health & Beauty</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Home & Garden</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Jewelry & Watches</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">Music</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Musical Instruments & Gear</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Pet Supplies</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Pottery & Glass</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Real Estate</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Specialty Services</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Sporting Goods</div>
+                    <div class="item" style="font-size: 12px;" data-value="1">Sports Mem, Cards & Fan Shop</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Stamps</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Tickets & Experiences</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Toys & Hobbies</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Travel</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Video Games & Consoles</div>
+                    <div class="item" style="font-size: 12px;" data-value="0">Everything Else</div>
+                </div>
+            </div>
+            <button class="ui button" id="findButton">Search</button>
+        </div>
+    </div>
+    <!--End search form-->
+        <div class="ui container segment">
+            <div class="row">
+                <div class="ui ten wide column" style="padding-top: 20px;">
+                    <div class="ui">
+                        <div class="ui two column very relaxed grid">
+                            <div class="column">
+                                <img class="ui large centered image" src="_img/5s1.jpg">
+                                <br>
+                                <div class="ui tiny images">
+                                    <img src="_img/5s1.jpg">
+                                    <img src="_img/5s1.jpg">
+                                    <img src="_img/5s1.jpg">
+                                    <img src="_img/5s1.jpg">
+                                </div>
+                                <h4 class="ui horizontal divider header">
+                                    <i class="tag icon"></i>
+                                    Description
+                                </h4>
+                                <div class="ui top attached tabular menu">
+                                    <div class="active item" id="description-item">Specification</div>
+                                    <div class="item" id="payment-item">Payments</div>
+                                </div>
+                                <div class="ui bottom attached active tab segment" id="description-segment">
+                                    <p>What is Lorem Ipsum?
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when
+                                        an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting,
+                                        remaining essentially unchanged. It was popularised in the 1960s with the
+                                        release of
+                                        Letraset
+                                        sheets containing Lorem Ipsum passages, and more recently with desktop
+                                        publishing
+                                        software
+                                        like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </div>
+                                <div class="ui bottom attached payment tab segment" id="payment-modal">
+                                    <p>What is Lorem Ipsum?
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when
+                                        an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting,
+                                        remaining essentially unchanged. It was popularised in the 1960s with the
+                                        release of
+                                        Letraset
+                                        sheets containing Lorem Ipsum passages, and more recently with desktop
+                                        publishing
+                                        software
+                                        like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column" style="text-align: left;">
+                                <h3 class="ui top attached header" style="background-color: #E5E5E5">
+                                    <strong>Apple iPhone 4S Mobile Phone 8GB 16GB 32GB Sim Free Factory Unlocked
+                                        Smartphone</strong>
+                                </h3>
+                                <div class="ui attached segment">
+                                    <div class="ui grid">
+                                        <div class="eight wide column">
+                                            <p>Time Left: 4 days</p>
+                                        </div>
+                                        <div class="eight wide column">
+                                            <p>Current Bid: Rs. 1,000.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui attached segment ">
+                                    <div class="two wide mobile four wide tablet four wide computer column">
+                                        <h5 class="ui horizontal divider header" >
+                                        <!--<i class="dollar icon"></i>-->
+                                        Enter Rs. 1,100.00 or more | <a href="bidders.html">7 Bids</a>
+                                        </h5>
+                                    </div>
+                                    <div class="ui four labeled input">
+                                        <label for="amount" class="ui label">Rs.</label>
+                                        <input placeholder="Place bid" id="amount" type="text">
+                                        <div class="ui basic label">.00</div>
+                                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <button class="ui inverted primary large button">
+                                        Place Bid
+                                    </button>
+                                    
+                                </div>
+                                <div class="ui attached segment" style="background-color: #f7f7f7;">
+                                    <div class="ui relaxed divided list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Product Category</a>
+                                                <div class="description">Mobile Phones | Apple</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Location</a>
+                                                <div class="description">Colombo | Nugegoda | Srilanka</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Condition</a>
+                                                <div class="description">Brand New</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="ui definition table">
+                                    <tbody>
+                                    <tr>
+                                        <td class="two wide column">Delivery</td>
+                                        <td> Varies | Includes international tracking</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Payments</td>
+                                        <td>
+                                            <img src="_img/payment%20icons/visa.png" style="width: 30px; height: 30px;">&nbsp;&nbsp;
+                                            <img src="_img/payment%20icons/mastercard.png"
+                                                 style="width: 30px; height: 30px;">&nbsp;&nbsp;
+                                            <img src="_img/payment%20icons/paypal.png"
+                                                 style="width: 30px; height: 30px;">&nbsp;&nbsp;
+                                            <img src="_img/payment%20icons/cash.png" style="width: 30px; height: 30px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Returns</td>
+                                        <td>Seller does not accept returns</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Guarantee</td>
+                                        <td><i class="money icon"></i> Money Back Guarantee
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="ui vertical divider">
+                            <i class="cart icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="sixteen wide column">
+        <div class="ui vertical footer segment"
+             style="width: 100%;border-top: #0d71bb 3px solid; background-color: #ffffff">
+            <div class="ui center aligned container">
+                <div class="ui stackable  divided grid">
+                    <div class="three wide column">
+                        <h4 class="ui header" style="font-family: sans-serif">Group 1</h4>
+                        <div class="ui link list">
+                            <a href="#" class="item">Site Map</a>
+                            <a href="#" class="item">Link Two</a>
+                            <a href="#" class="item">Link Three</a>
+                            <a href="#" class="item">Link Four</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui header" style="font-family: sans-serif">Group 2</h4>
+                        <div class="ui link list">
+
+                            <a href="temp_rec/ContactUs.html" class="item">Contact Us</a>
+                            <a href="#" class="item">Link Three</a>
+                            <a href="#" class="item">Link Four</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui header" style="font-family: sans-serif">Group 3</h4>
+                        <div class="ui link list">
+                            <a href="#" class="item">Terms and Conditions</a>
+                            <a href="#" class="item">Link Two</a>
+                            <a href="#" class="item">Link Three</a>
+                            <a href="#" class="item">Link Four</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <img src="_img/newlogo.png" class="ui centered small image">
+                        <h4 class="ui header">Dealing (pvt) ltd.</h4>
+                        <p>Bid and Sell what you want.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end of footer-->
+    <script src="_js/jquery-3.3.1.min.js"></script>
+    <script src="_js/semantic.js"></script>
+    <script src="_js/popup.js"></script>
+</body>
+</html>
